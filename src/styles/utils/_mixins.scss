@@ -1,0 +1,71 @@
+@use 'functions' as function;
+
+@mixin text-preset-1 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(65);
+	line-height: 100%;
+	letter-spacing: function.rem(-2.5);
+}
+
+@mixin text-preset-2 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(48);
+	line-height: 100%;
+	letter-spacing: function.rem(-2);
+}
+
+@mixin text-preset-3 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(40);
+	line-height: 100%;
+	letter-spacing: function.rem(-1.75);
+}
+
+@mixin text-preset-4 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(32);
+	line-height: 100%;
+	letter-spacing: function.rem(-1.4);
+}
+
+@mixin text-preset-5 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(24);
+	line-height: 115%;
+	letter-spacing: function.rem(-1);
+}
+
+@mixin text-preset-6 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(20);
+	line-height: 125%;
+	letter-spacing: function.rem(-0.9);
+}
+
+@mixin text-preset-7 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(18);
+	line-height: 135%;
+	letter-spacing: function.rem(-0.8);
+}
+
+@mixin text-preset-8 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(15);
+	line-height: 165%;
+	letter-spacing: function.rem(0);
+}
+
+@mixin text-preset-9 {
+	font: var(--font-Space-Mono-Bold);
+	font-size: function.rem(10);
+	line-height: 150%;
+	letter-spacing: function.rem(-0.45);
+}
+
+@mixin text-preset-10 {
+	font: var(--font-Lexend-Deca-Regular);
+	font-size: function.rem(15);
+	line-height: 165%;
+	letter-spacing: function.rem(0);
+}
