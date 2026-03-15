@@ -1,0 +1,11 @@
+@use '../utils/' as util;
+
+.rounded {
+	border-radius: util.rem(16);
+	overflow: hidden;
+}
+
+em {
+	font-style: normal;
+	background-color: var(--color-Rose-500);
+}
