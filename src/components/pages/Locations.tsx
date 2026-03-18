@@ -1,5 +1,14 @@
+// IMPORTED FROM /contents/locations FOLDER.
+import LocationsHeader from '../contents/locations/LocationsHeader.tsx';
+import MapLocations from '../contents/locations/MapLocations.tsx';
+
 function Locations() {
-	return <div>Locations</div>;
+	return (
+		<>
+			<LocationsHeader />
+			<MapLocations />
+		</>
+	);
 }
 
 export default Locations;
