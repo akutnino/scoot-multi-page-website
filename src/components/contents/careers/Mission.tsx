@@ -1,5 +1,5 @@
 function Mission() {
-	return <div>Mission</div>;
+	return <section>Mission</section>;
 }
 
 export default Mission;

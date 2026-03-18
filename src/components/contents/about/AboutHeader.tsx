@@ -1,5 +1,5 @@
 function AboutHeader() {
-	return <div>AboutHeader</div>;
+	return <header>AboutHeader</header>;
 }
 
 export default AboutHeader;

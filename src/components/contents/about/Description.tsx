@@ -1,5 +1,5 @@
 function Description() {
-	return <div>Description</div>;
+	return <section>Description</section>;
 }
 
 export default Description;

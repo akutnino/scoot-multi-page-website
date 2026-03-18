@@ -1,5 +1,5 @@
 function Payments() {
-	return <div>Payments</div>;
+	return <section>Payments</section>;
 }
 
 export default Payments;

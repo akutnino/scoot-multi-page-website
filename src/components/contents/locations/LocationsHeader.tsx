@@ -1,5 +1,5 @@
 function LocationsHeader() {
-	return <div>LocationsHeader</div>;
+	return <header>LocationsHeader</header>;
 }
 
 export default LocationsHeader;

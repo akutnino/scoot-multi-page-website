@@ -1,5 +1,5 @@
 function Telemetry() {
-	return <div>Telemetry</div>;
+	return <section>Telemetry</section>;
 }
 
 export default Telemetry;

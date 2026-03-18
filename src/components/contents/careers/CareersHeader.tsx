@@ -1,5 +1,5 @@
 function CareersHeader() {
-	return <div>CareersHeader</div>;
+	return <header>CareersHeader</header>;
 }
 
 export default CareersHeader;

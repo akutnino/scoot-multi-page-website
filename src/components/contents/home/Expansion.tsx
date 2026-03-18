@@ -1,5 +1,5 @@
 function Expansion() {
-	return <div>Expansion</div>;
+	return <section>Expansion</section>;
 }
 
 export default Expansion;

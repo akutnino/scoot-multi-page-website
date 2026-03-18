@@ -1,5 +1,5 @@
 function HeroSection() {
-	return <div>HeroSection</div>;
+	return <header>HeroSection</header>;
 }
 
 export default HeroSection;

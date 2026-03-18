@@ -1,5 +1,5 @@
 function Values() {
-	return <div>Values</div>;
+	return <section>Values</section>;
 }
 
 export default Values;

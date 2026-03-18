@@ -1,5 +1,5 @@
 function CoreValues() {
-	return <div>CoreValues</div>;
+	return <section>CoreValues</section>;
 }
 
 export default CoreValues;

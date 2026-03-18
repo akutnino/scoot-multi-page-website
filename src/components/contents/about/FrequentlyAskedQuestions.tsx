@@ -1,5 +1,5 @@
 function FrequentlyAskedQuestions() {
-	return <div>FrequentlyAskedQuestions</div>;
+	return <section>FrequentlyAskedQuestions</section>;
 }
 
 export default FrequentlyAskedQuestions;

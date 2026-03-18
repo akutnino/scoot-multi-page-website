@@ -1,5 +1,5 @@
 function MapLocations() {
-	return <div>MapLocations</div>;
+	return <section>MapLocations</section>;
 }
 
 export default MapLocations;

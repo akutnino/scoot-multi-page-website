@@ -1,4 +1,4 @@
 function JobVacancies() {
-	return <div>JobVacancies</div>;
+	return <section>JobVacancies</section>;
 }
 export default JobVacancies;
