@@ -27,7 +27,7 @@ function HeroSection() {
 			</div>
 
 			<BackgroundPhoto
-				className='heroSection__backgroundImage'
+				className='heroSection__backgroundPhoto'
 				src={home_hero_desktop}
 				alt='Person driving a scooter'
 			/>
