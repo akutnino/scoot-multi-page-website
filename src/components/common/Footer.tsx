@@ -11,7 +11,7 @@ function Footer() {
 	return (
 		<footer className='footer'>
 			<div className='footer__wrapper'>
-				<div className='footer__navListWrapper'>
+				<nav className='footer__navListWrapper'>
 					<Link to={'/'}>
 						<LogoImage className='footer__logoImage' />
 					</Link>
@@ -29,7 +29,7 @@ function Footer() {
 							<Link to={'/locations'}>Locations</Link>
 						</li>
 					</ul>
-				</div>
+				</nav>
 
 				<ul className='footer__navLinks'>
 					<li className='footer__navItem'>
