@@ -1,4 +1,5 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
+import BackgroundPhoto from '../../common/BackgroundPhoto.tsx';
 import CallToActionButton from '../../common/CallToActionButton.tsx';
 
 import home_hero_desktop from '/src/assets/images/home-hero-desktop.jpg';
@@ -25,9 +26,10 @@ function HeroSection() {
 				</div>
 			</div>
 
-			<BackgroundImage
+			<BackgroundPhoto
 				className='heroSection__backgroundImage'
 				src={home_hero_desktop}
+				alt='Person driving a scooter'
 			/>
 
 			<BackgroundImage

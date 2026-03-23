@@ -1,5 +1,6 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 import CallToActionButton from '../../common/CallToActionButton.tsx';
+import BackgroundPhoto from '../../common/BackgroundPhoto.tsx';
 
 import near_you from '/src/assets/images/near-you.jpg';
 import right_arrow from '/src/assets/patterns/right-arrow.svg';
@@ -9,9 +10,10 @@ function Expansion() {
 	return (
 		<section className='expansion'>
 			<div className='expansion__backgroundImageWrapper'>
-				<BackgroundImage
+				<BackgroundPhoto
 					className='expansion__nearYouImage'
 					src={near_you}
+					alt='Photo of buildings'
 				/>
 
 				<BackgroundImage

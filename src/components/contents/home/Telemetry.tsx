@@ -1,5 +1,6 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 import CallToActionButton from '../../common/CallToActionButton.tsx';
+import BackgroundPhoto from '../../common/BackgroundPhoto.tsx';
 
 import telemetry from '/src/assets/images/telemetry.jpg';
 import left_downward_arrow from '/src/assets/patterns/left-downward-arrow.svg';
@@ -24,9 +25,10 @@ function Telemetry() {
 			</div>
 
 			<div className='telemetry__backgroundImageWrapper'>
-				<BackgroundImage
+				<BackgroundPhoto
 					className='telemetry__telemetryImage'
 					src={telemetry}
+					alt='Person holding a phone'
 				/>
 
 				<BackgroundImage

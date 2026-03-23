@@ -1,5 +1,6 @@
 import BackgroundImage from '../../common/BackgroundImage.tsx';
 import CallToActionButton from '../../common/CallToActionButton.tsx';
+import BackgroundPhoto from '../../common/BackgroundPhoto.tsx';
 
 import payments from '/src/assets/images/payments.jpg';
 import left_downward_arrow from '/src/assets/patterns/left-downward-arrow.svg';
@@ -24,9 +25,10 @@ function Payments() {
 			</div>
 
 			<div className='payments__backgroundImageWrapper'>
-				<BackgroundImage
+				<BackgroundPhoto
 					className='payments__paymentsImage'
 					src={payments}
+					alt='Person making a payment'
 				/>
 
 				<BackgroundImage
