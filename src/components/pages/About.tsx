@@ -1,7 +1,7 @@
 // IMPORTED FROM /contents/about FOLDER.
 import AboutHeader from '../contents/about/AboutHeader.tsx';
 import Description from '../contents/about/Description.tsx';
-import Values from '../contents/about/Values.tsx';
+import CoreValues from '../common/CoreValues.tsx';
 import FrequentlyAskedQuestions from '../contents/about/FrequentlyAskedQuestions.tsx';
 
 function About() {
@@ -9,7 +9,7 @@ function About() {
 		<>
 			<AboutHeader />
 			<Description />
-			<Values />
+			<CoreValues headline='Our values' />
 			<FrequentlyAskedQuestions />
 		</>
 	);
