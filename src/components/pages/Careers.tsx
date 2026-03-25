@@ -1,7 +1,7 @@
 // IMPORTED FROM /contents/careers FOLDER.
 import CareersHeader from '../contents/careers/CareersHeader.tsx';
 import Mission from '../contents/careers/Mission.tsx';
-import CoreValues from '../contents/careers/CoreValues.tsx';
+import CoreValues from '../common/CoreValues.tsx';
 import JobVacancies from '../contents/careers/JobVacancies.tsx';
 
 function Careers() {
@@ -9,7 +9,7 @@ function Careers() {
 		<>
 			<CareersHeader />
 			<Mission />
-			<CoreValues />
+			<CoreValues headline='Why join us?' />
 			<JobVacancies />
 		</>
 	);
