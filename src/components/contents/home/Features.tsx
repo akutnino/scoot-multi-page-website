@@ -17,7 +17,7 @@ function Features() {
 					/>
 
 					<div className='features__descriptionWrapper'>
-						<h1 className='features__featureHeader'>Locate with app</h1>
+						<h1 className='features__featureHeadline'>Locate with app</h1>
 						<p className='features__featureDescription'>
 							Use the app to find the nearest scooter to you. We are continuously placing
 							scooters in the areas with most demand, so one should never be too far away.
@@ -32,7 +32,7 @@ function Features() {
 					/>
 
 					<div className='features__descriptionWrapper'>
-						<h1 className='features__featureHeader'>Pick your scooter</h1>
+						<h1 className='features__featureHeadline'>Pick your scooter</h1>
 						<p className='features__featureDescription'>
 							We show the most important info for the scooters closest to you. So you know
 							how much charge they have left and can see roughly how much it will cost.
@@ -47,7 +47,7 @@ function Features() {
 					/>
 
 					<div className='features__descriptionWrapper'>
-						<h1 className='features__featureHeader'>Enjoy the ride</h1>
+						<h1 className='features__featureHeadline'>Enjoy the ride</h1>
 						<p className='features__featureDescription'>
 							Scan the QR code and the bike will unlock. Retract the cable lock, put on a
 							helmet, and you’re off! Always lock bikes away from walkways and
