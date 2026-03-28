@@ -1,5 +1,5 @@
 function MobileDrawer() {
-	return <dialog>MobileDrawer</dialog>;
+	return <dialog className='mobileDrawer'>MobileDrawer</dialog>;
 }
 
 export default MobileDrawer;
