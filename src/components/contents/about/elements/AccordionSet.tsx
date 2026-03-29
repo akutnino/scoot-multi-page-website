@@ -16,19 +16,19 @@ function AccordionSet({
 	children: ReactNode;
 }) {
 	return (
-		<div className='accordion'>
+		<div className='accordionSet'>
 			<button
-				className='accordion__toggleButton'
+				className='accordionSet__toggleButton'
 				type='button'
 				onClick={onclick}
 			>
-				<h1 className='accordion__question'>{question}</h1>
+				<h1 className='accordionSet__question'>{question}</h1>
 				<BackgroundImage
-					className='accordion__chevronImage'
+					className='accordionSet__chevronImage'
 					src={chevron}
 				/>
 			</button>
-			{isOpen && <p className='accordion__answer'>{children}</p>}
+			{isOpen && <p className='accordionSet__answer'>{children}</p>}
 		</div>
 	);
 }
