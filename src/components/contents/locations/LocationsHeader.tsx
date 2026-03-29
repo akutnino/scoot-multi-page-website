@@ -6,7 +6,7 @@ import white_circles from '/src/assets/patterns/white-circles.svg';
 
 function LocationsHeader() {
 	return (
-		<header>
+		<header className='locationsHeader'>
 			<h1 className='locationsHeader__headline'>Locations</h1>
 
 			<BackgroundPhoto
