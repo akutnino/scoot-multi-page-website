@@ -26,7 +26,7 @@ function Mission() {
 
 			<div className='mission__backgroundImageWrapper'>
 				<BackgroundPhoto
-					className='mission__MissionImage'
+					className='mission__missionImage'
 					src={join_us}
 					alt='Person talking to the team'
 				/>
