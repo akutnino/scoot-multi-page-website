@@ -9,7 +9,7 @@ function AppLayout({ children }: { children: ReactNode }) {
 	return (
 		<>
 			<Navigation />
-			<main>{children}</main>
+			<main className='appLayout'>{children}</main>
 			<CallToAction />
 			<Footer />
 		</>
