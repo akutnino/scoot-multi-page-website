@@ -9,7 +9,7 @@ function JobPost({
 }) {
 	return (
 		<article className='jobPost'>
-			<div className='jobPost_wrapper'>
+			<div className='jobPost__wrapper'>
 				<div className='jobPost__descriptionWrapper'>
 					<h1 className='jobPost__jobPosition'>{jobPosition}</h1>
 					<p className='jobPost__jobLocation'>{jobLocation}</p>
