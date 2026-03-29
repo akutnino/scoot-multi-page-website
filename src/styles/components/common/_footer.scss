@@ -1,0 +1,61 @@
+@use '/src/styles/utils/' as util;
+
+.footer {
+	&__wrapper {
+	}
+
+	&__navListWrapper {
+	}
+
+	&__logoImage {
+	}
+
+	&__navList {
+	}
+
+	&__navItem {
+	}
+
+	&__navLinks {
+	}
+
+	&__navItem {
+	}
+
+	&__iconLink {
+	}
+
+	&__iconImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.footer {
+		&__wrapper {
+		}
+
+		&__navListWrapper {
+		}
+
+		&__logoImage {
+		}
+
+		&__navList {
+		}
+
+		&__navItem {
+		}
+
+		&__navLinks {
+		}
+
+		&__navItem {
+		}
+
+		&__iconLink {
+		}
+
+		&__iconImage {
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@use '/src/styles/utils/' as util;
+
+.accordion {
+	&__toggleButton {
+	}
+
+	&__question {
+	}
+
+	&__chevronImage {
+	}
+
+	&__answer {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.accordion {
+		&__toggleButton {
+		}
+
+		&__question {
+		}
+
+		&__chevronImage {
+		}
+
+		&__answer {
+		}
+	}
+}

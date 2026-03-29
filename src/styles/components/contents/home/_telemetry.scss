@@ -1,0 +1,61 @@
+@use '/src/styles/utils/' as util;
+
+.telemetry {
+	&__headlineWrapper {
+	}
+
+	&__contentWrapper {
+	}
+
+	&__headline {
+	}
+
+	&__description {
+	}
+
+	&__callToActionButton {
+	}
+
+	&__backgroundImageWrapper {
+	}
+
+	&__telemetryImage {
+	}
+
+	&__leftDownwardArrowImage {
+	}
+
+	&__circleImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.telemetry {
+		&__headlineWrapper {
+		}
+
+		&__contentWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__description {
+		}
+
+		&__callToActionButton {
+		}
+
+		&__backgroundImageWrapper {
+		}
+
+		&__telemetryImage {
+		}
+
+		&__leftDownwardArrowImage {
+		}
+
+		&__circleImage {
+		}
+	}
+}

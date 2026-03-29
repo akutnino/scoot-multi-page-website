@@ -1,0 +1,55 @@
+@use '/src/styles/utils/' as util;
+
+.mapLocations {
+	&__backgroundPhotoWrapper {
+	}
+
+	&__mapBackgroundPhoto {
+	}
+
+	&__cityLocation {
+	}
+
+	&__contentWrapper {
+	}
+
+	&__descriptionWrapper {
+	}
+
+	&__headline {
+	}
+
+	&__description {
+	}
+
+	&__messageUsButton {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.mapLocations {
+		&__backgroundPhotoWrapper {
+		}
+
+		&__mapBackgroundPhoto {
+		}
+
+		&__cityLocation {
+		}
+
+		&__contentWrapper {
+		}
+
+		&__descriptionWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__description {
+		}
+
+		&__messageUsButton {
+		}
+	}
+}

@@ -1,0 +1,67 @@
+@use '/src/styles/utils/' as util;
+
+.description {
+	&__wrapper {
+	}
+
+	&__contentWrapper {
+	}
+
+	&__headline {
+	}
+
+	&__description {
+	}
+
+	&__backgroundImageWrapper {
+	}
+
+	&__digitalEraPhoto {
+	}
+
+	&__leftUpwardArrowImage {
+	}
+
+	&__circleImage {
+	}
+
+	&__betterLivingPhoto {
+	}
+
+	&__rightArrowImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.description {
+		&__wrapper {
+		}
+
+		&__contentWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__description {
+		}
+
+		&__backgroundImageWrapper {
+		}
+
+		&__digitalEraPhoto {
+		}
+
+		&__leftUpwardArrowImage {
+		}
+
+		&__circleImage {
+		}
+
+		&__betterLivingPhoto {
+		}
+
+		&__rightArrowImage {
+		}
+	}
+}

@@ -1,0 +1,61 @@
+@use '/src/styles/utils/' as util;
+
+.payments {
+	&__headlineWrapper {
+	}
+
+	&__contentWrapper {
+	}
+
+	&__headline {
+	}
+
+	&__description {
+	}
+
+	&__callToActionButton {
+	}
+
+	&__backgroundImageWrapper {
+	}
+
+	&__paymentsImage {
+	}
+
+	&__leftDownwardArrowImage {
+	}
+
+	&__circleImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.payments {
+		&__headlineWrapper {
+		}
+
+		&__contentWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__description {
+		}
+
+		&__callToActionButton {
+		}
+
+		&__backgroundImageWrapper {
+		}
+
+		&__paymentsImage {
+		}
+
+		&__leftDownwardArrowImage {
+		}
+
+		&__circleImage {
+		}
+	}
+}

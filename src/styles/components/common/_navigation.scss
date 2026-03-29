@@ -1,0 +1,43 @@
+@use '/src/styles/utils/' as util;
+
+.navigation {
+	&__wrapper {
+	}
+
+	&__navListWrapper {
+	}
+
+	&__logoImage {
+	}
+
+	&__navList {
+	}
+
+	&__navItem {
+	}
+
+	&__callToActionButton {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.navigation {
+		&__wrapper {
+		}
+
+		&__navListWrapper {
+		}
+
+		&__logoImage {
+		}
+
+		&__navList {
+		}
+
+		&__navItem {
+		}
+
+		&__callToActionButton {
+		}
+	}
+}

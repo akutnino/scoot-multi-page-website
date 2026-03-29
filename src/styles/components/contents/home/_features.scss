@@ -1,0 +1,49 @@
+@use '/src/styles/utils/' as util;
+
+.features {
+	&__backgroundLinePattern {
+	}
+
+	&__featureList {
+	}
+
+	&__featureItem {
+	}
+
+	&__featureIcon {
+	}
+
+	&__descriptionWrapper {
+	}
+
+	&__featureHeadline {
+	}
+
+	&__featureDescription {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.features {
+		&__backgroundLinePattern {
+		}
+
+		&__featureList {
+		}
+
+		&__featureItem {
+		}
+
+		&__featureIcon {
+		}
+
+		&__descriptionWrapper {
+		}
+
+		&__featureHeadline {
+		}
+
+		&__featureDescription {
+		}
+	}
+}

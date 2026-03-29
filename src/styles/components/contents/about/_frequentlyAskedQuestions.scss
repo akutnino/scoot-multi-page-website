@@ -1,0 +1,31 @@
+@use '/src/styles/utils/' as util;
+
+.frequentlyAskedQuestions {
+	&__headline {
+	}
+
+	&__wrapper {
+	}
+
+	&__accordionHeadline {
+	}
+
+	&__accordionWrapper {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.frequentlyAskedQuestions {
+		&__headline {
+		}
+
+		&__wrapper {
+		}
+
+		&__accordionHeadline {
+		}
+
+		&__accordionWrapper {
+		}
+	}
+}

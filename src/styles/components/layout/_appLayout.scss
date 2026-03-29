@@ -1,0 +1,9 @@
+@use '/src/styles/utils/' as util;
+
+.appLayout {
+}
+
+@media (max-width: util.rem(1300)) {
+	.appLayout {
+	}
+}

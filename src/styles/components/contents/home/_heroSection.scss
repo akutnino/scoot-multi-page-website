@@ -1,0 +1,61 @@
+@use '/src/styles/utils/' as util;
+
+.heroSection {
+	&__headlineWrapper {
+	}
+
+	&__headline {
+	}
+
+	&__descriptionWrapper {
+	}
+
+	&__description {
+	}
+
+	&__callToActionButton {
+	}
+
+	&__backgroundPhoto {
+	}
+
+	&__lineImage {
+	}
+
+	&__rightArrowImage {
+	}
+
+	&__whiteCirclesImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.heroSection {
+		&__headlineWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__descriptionWrapper {
+		}
+
+		&__description {
+		}
+
+		&__callToActionButton {
+		}
+
+		&__backgroundPhoto {
+		}
+
+		&__lineImage {
+		}
+
+		&__rightArrowImage {
+		}
+
+		&__whiteCirclesImage {
+		}
+	}
+}

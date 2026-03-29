@@ -1,0 +1,49 @@
+@use '/src/styles/utils/' as util;
+
+.callToAction {
+	&__wrapper {
+	}
+
+	&__headline {
+	}
+
+	&__navLinks {
+	}
+
+	&__navItem {
+	}
+
+	&__iconLink {
+	}
+
+	&__iconImage {
+	}
+
+	&__backgroundImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.callToAction {
+		&__wrapper {
+		}
+
+		&__headline {
+		}
+
+		&__navLinks {
+		}
+
+		&__navItem {
+		}
+
+		&__iconLink {
+		}
+
+		&__iconImage {
+		}
+
+		&__backgroundImage {
+		}
+	}
+}

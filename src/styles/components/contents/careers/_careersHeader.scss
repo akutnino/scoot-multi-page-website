@@ -1,0 +1,25 @@
+@use '/src/styles/utils/' as util;
+
+.careersHeader {
+	&__headline {
+	}
+
+	&__backgroundPhoto {
+	}
+
+	&__whiteCirclesImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.careersHeader {
+		&__headline {
+		}
+
+		&__backgroundPhoto {
+		}
+
+		&__whiteCirclesImage {
+		}
+	}
+}

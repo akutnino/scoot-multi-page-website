@@ -1,0 +1,61 @@
+@use '/src/styles/utils/' as util;
+
+.mission {
+	&__headlineWrapper {
+	}
+
+	&__contentWrapper {
+	}
+
+	&__headline {
+	}
+
+	&__description {
+	}
+
+	&__callToActionButton {
+	}
+
+	&__backgroundImageWrapper {
+	}
+
+	&__missionImage {
+	}
+
+	&__leftDownwardArrowImage {
+	}
+
+	&__circleImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.mission {
+		&__headlineWrapper {
+		}
+
+		&__contentWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__description {
+		}
+
+		&__callToActionButton {
+		}
+
+		&__backgroundImageWrapper {
+		}
+
+		&__missionImage {
+		}
+
+		&__leftDownwardArrowImage {
+		}
+
+		&__circleImage {
+		}
+	}
+}

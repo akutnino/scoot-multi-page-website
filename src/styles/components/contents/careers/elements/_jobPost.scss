@@ -1,0 +1,31 @@
+@use '/src/styles/utils/' as util;
+
+.jobPost {
+	&__wrapper {
+	}
+
+	&__descriptionWrapper {
+	}
+
+	&__jobPosition {
+	}
+
+	&__jobLocation {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.jobPost {
+		&__wrapper {
+		}
+
+		&__descriptionWrapper {
+		}
+
+		&__jobPosition {
+		}
+
+		&__jobLocation {
+		}
+	}
+}

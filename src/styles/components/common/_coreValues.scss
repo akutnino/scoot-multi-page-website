@@ -1,0 +1,61 @@
+@use '/src/styles/utils/' as util;
+
+.coreValues {
+	&__headline {
+	}
+
+	&__valueList {
+	}
+
+	&__valueItem {
+	}
+
+	&__backgroundPhotoWrapper {
+	}
+
+	&__backgroundPhoto {
+	}
+
+	&__valueNumber {
+	}
+
+	&__descriptionWrapper {
+	}
+
+	&__valueHeadline {
+	}
+
+	&__valuedescription {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.coreValues {
+		&__headline {
+		}
+
+		&__valueList {
+		}
+
+		&__valueItem {
+		}
+
+		&__backgroundPhotoWrapper {
+		}
+
+		&__backgroundPhoto {
+		}
+
+		&__valueNumber {
+		}
+
+		&__descriptionWrapper {
+		}
+
+		&__valueHeadline {
+		}
+
+		&__valuedescription {
+		}
+	}
+}

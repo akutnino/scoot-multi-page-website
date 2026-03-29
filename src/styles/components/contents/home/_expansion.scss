@@ -1,0 +1,61 @@
+@use '/src/styles/utils/' as util;
+
+.expansion {
+	&__backgroundImageWrapper {
+	}
+
+	&__nearYouImage {
+	}
+
+	&__rightArrowImage {
+	}
+
+	&__circleImage {
+	}
+
+	&__headlineWrapper {
+	}
+
+	&__contentWrapper {
+	}
+
+	&__headline {
+	}
+
+	&__description {
+	}
+
+	&__callToActionButton {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.expansion {
+		&__backgroundImageWrapper {
+		}
+
+		&__nearYouImage {
+		}
+
+		&__rightArrowImage {
+		}
+
+		&__circleImage {
+		}
+
+		&__headlineWrapper {
+		}
+
+		&__contentWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__description {
+		}
+
+		&__callToActionButton {
+		}
+	}
+}

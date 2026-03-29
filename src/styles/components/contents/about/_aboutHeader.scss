@@ -1,0 +1,25 @@
+@use '/src/styles/utils/' as util;
+
+.aboutHeader {
+	&__headline {
+	}
+
+	&__backgroundPhoto {
+	}
+
+	&__whiteCirclesImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.aboutHeader {
+		&__headline {
+		}
+
+		&__backgroundPhoto {
+		}
+
+		&__whiteCirclesImage {
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@use '/src/styles/utils/' as util;
+
+.locationsHeader {
+	&__headline {
+	}
+
+	&__backgroundPhoto {
+	}
+
+	&__whiteCirclesImage {
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.locationsHeader {
+		&__headline {
+		}
+
+		&__backgroundPhoto {
+		}
+
+		&__whiteCirclesImage {
+		}
+	}
+}
