@@ -10,20 +10,22 @@ import white_circles from '/src/assets/patterns/white-circles.svg';
 function HeroSection() {
 	return (
 		<header className='heroSection'>
-			<div className='heroSection__headlineWrapper'>
-				<h1 className='heroSection__headline'>Scooter sharing made simple</h1>
+			<div className='heroSection__container wrapper'>
+				<section className='heroSection__headlineWrapper'>
+					<h1 className='heroSection__headline'>Scooter sharing made simple</h1>
 
-				<div className='heroSection__descriptionWrapper'>
-					<p className='heroSection__description'>
-						Scoot takes the hassle out of urban mobility. Our bikes are placed in
-						convenient locations in each of our cities. Use our app to locate the nearest
-						bike, unlock it with a tap, and you’re away!
-					</p>
+					<div className='heroSection__descriptionWrapper'>
+						<p className='heroSection__description'>
+							Scoot takes the hassle out of urban mobility. Our bikes are placed in
+							convenient locations in each of our cities. Use our app to locate the
+							nearest bike, unlock it with a tap, and you’re away!
+						</p>
 
-					<CallToActionButton className='heroSection__callToActionButton'>
-						Get Scootin
-					</CallToActionButton>
-				</div>
+						<CallToActionButton className='heroSection__callToActionButton'>
+							Get Scootin
+						</CallToActionButton>
+					</div>
+				</section>
 			</div>
 
 			<BackgroundPhoto
