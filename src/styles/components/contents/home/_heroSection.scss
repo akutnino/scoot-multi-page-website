@@ -1,31 +1,87 @@
 @use '/src/styles/utils/' as util;
 
 .heroSection {
+	display: grid;
+	grid-template-areas: 'stack';
+	overflow: hidden;
+
+	&__container {
+		border: 1px solid greenyellow;
+
+		position: absolute;
+
+		grid-area: stack;
+		place-self: center;
+	}
+
 	&__headlineWrapper {
+		border: 1px solid red;
+
+		display: grid;
+		grid-area: stack;
+		z-index: 1;
+
+		max-width: util.rem(600);
+		gap: util.rem(40);
 	}
 
 	&__headline {
+		color: var(--color-Neutral-0);
+
+		@include util.text-preset-1;
 	}
 
 	&__descriptionWrapper {
+		border: 1px solid blue;
+
+		display: grid;
+		place-self: end;
+		max-width: util.rem(500);
+		gap: util.rem(40);
 	}
 
 	&__description {
+		color: var(--color-Neutral-0);
+
+		@include util.text-preset-10;
 	}
 
 	&__callToActionButton {
+		max-width: fit-content;
+		background-color: var(--color-Amber-400);
+		border-style: none;
+		color: var(--color-Neutral-0);
+		padding: util.rem(16) util.rem(40);
+
+		@include util.text-preset-8;
 	}
 
 	&__backgroundPhoto {
+		grid-area: stack;
+		z-index: -1;
+
+		width: 100%;
+		min-width: min-content;
+
+		// how to overflow hidden from both sides.
+		// position: absolute;
+		// transform: translateX(-50%);
+		// left: 50%;
 	}
 
 	&__lineImage {
+		grid-area: stack;
+		z-index: 1;
 	}
 
 	&__rightArrowImage {
+		grid-area: stack;
+		z-index: 1;
 	}
 
 	&__whiteCirclesImage {
+		grid-area: stack;
+		z-index: 1;
 	}
 }
 
