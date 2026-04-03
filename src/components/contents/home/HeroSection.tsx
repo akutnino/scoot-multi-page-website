@@ -26,27 +26,27 @@ function HeroSection() {
 						</CallToActionButton>
 					</div>
 				</section>
+
+				<BackgroundImage
+					className='heroSection__lineImage'
+					src={line}
+				/>
+
+				<BackgroundImage
+					className='heroSection__rightArrowImage'
+					src={right_arrow}
+				/>
+
+				<BackgroundImage
+					className='heroSection__whiteCirclesImage'
+					src={white_circles}
+				/>
 			</div>
 
 			<BackgroundPhoto
 				className='heroSection__backgroundPhoto'
 				src={home_hero_desktop}
 				alt='Person driving a scooter'
-			/>
-
-			<BackgroundImage
-				className='heroSection__lineImage'
-				src={line}
-			/>
-
-			<BackgroundImage
-				className='heroSection__rightArrowImage'
-				src={right_arrow}
-			/>
-
-			<BackgroundImage
-				className='heroSection__whiteCirclesImage'
-				src={white_circles}
 			/>
 		</header>
 	);
