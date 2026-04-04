@@ -4,19 +4,16 @@
 	display: grid;
 	grid-template-areas: 'stack';
 	overflow: hidden;
+	min-height: util.rem(650);
+	position: relative;
 
 	&__container {
-		border: 1px solid greenyellow;
-
 		position: absolute;
-
 		grid-area: stack;
 		place-self: center;
 	}
 
 	&__headlineWrapper {
-		border: 1px solid red;
-
 		display: grid;
 		grid-area: stack;
 		z-index: 1;
@@ -32,8 +29,6 @@
 	}
 
 	&__descriptionWrapper {
-		border: 1px solid blue;
-
 		display: grid;
 		place-self: end;
 		max-width: util.rem(500);
@@ -56,6 +51,18 @@
 		@include util.text-preset-8;
 	}
 
+	&__lineImage {
+		position: absolute;
+		top: util.rem(215);
+		left: util.rem(-160);
+	}
+
+	&__rightArrowImage {
+		position: absolute;
+		top: util.rem(215);
+		left: util.rem(660);
+	}
+
 	&__backgroundPhoto {
 		grid-area: stack;
 		z-index: -1;
@@ -63,25 +70,33 @@
 		width: 100%;
 		min-width: min-content;
 
-		// how to overflow hidden from both sides.
-		// position: absolute;
-		// transform: translateX(-50%);
-		// left: 50%;
-	}
-
-	&__lineImage {
-		grid-area: stack;
-		z-index: 1;
-	}
-
-	&__rightArrowImage {
-		grid-area: stack;
-		z-index: 1;
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
 	}
 
 	&__whiteCirclesImage {
 		grid-area: stack;
 		z-index: 1;
+
+		position: relative;
+		justify-self: end;
+		align-self: center;
+
+		top: util.rem(140);
+		right: util.rem(-40);
+	}
+}
+
+@container heroSection (width > 1440px) {
+	.heroSection {
+		position: static;
+
+		&__backgroundPhoto {
+			position: static;
+			transform: translateX(0%);
+			left: 0;
+		}
 	}
 }
 
