@@ -10,6 +10,8 @@ function Features() {
 			<div className='features__backgroundLinePattern' />
 
 			<ul className='features__featureList'>
+				<li className='features__bgListLinePattern' />
+
 				<li className='features__featureItem'>
 					<BackgroundImage
 						className='features__featureIcon'
