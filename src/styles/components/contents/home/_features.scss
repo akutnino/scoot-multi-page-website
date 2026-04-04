@@ -1,25 +1,67 @@
 @use '/src/styles/utils/' as util;
 
 .features {
+	display: grid;
+	grid-template-columns: 1fr min(100% - util.rem(80), util.rem(1300)) 1fr;
+
+	overflow: hidden;
+	margin-top: util.rem(160);
+	position: relative;
+
 	&__backgroundLinePattern {
+		position: relative;
+		background-color: var(--color-Slate-100);
+		height: util.rem(10);
+
+		top: util.rem(45);
+		z-index: -1;
 	}
 
 	&__featureList {
+		grid-column: 2/3;
+
+		display: flex;
+		gap: util.rem(30);
+		list-style: none;
+	}
+
+	&__bgListLinePattern {
+		grid-column: 2/3;
+
+		position: absolute;
+		background-color: var(--color-Slate-100);
+		height: util.rem(10);
+		width: calc(100% - util.rem(360));
+		min-width: 70%;
+
+		top: util.rem(45);
+		z-index: -1;
 	}
 
 	&__featureItem {
+		display: grid;
+		gap: util.rem(40);
 	}
 
 	&__featureIcon {
+		opacity: 1;
 	}
 
 	&__descriptionWrapper {
+		display: grid;
+		gap: util.rem(25);
 	}
 
 	&__featureHeadline {
+		color: var(--color-Slate-600);
+
+		@include util.text-preset-5;
 	}
 
 	&__featureDescription {
+		color: var(--color-Slate-400);
+
+		@include util.text-preset-10;
 	}
 }
 
