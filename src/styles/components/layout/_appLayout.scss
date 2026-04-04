@@ -1,6 +1,8 @@
 @use '/src/styles/utils/' as util;
 
 .appLayout {
+	container-name: heroSection;
+	container-type: inline-size;
 }
 
 @media (max-width: util.rem(1300)) {
