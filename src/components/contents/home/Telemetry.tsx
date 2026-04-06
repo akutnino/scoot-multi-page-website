@@ -8,7 +8,7 @@ import circle from '/src/assets/patterns/circle.svg';
 
 function Telemetry() {
 	return (
-		<section className='telemetry'>
+		<section className='telemetry wrapper'>
 			<div className='telemetry__headlineWrapper'>
 				<div className='telemetry__contentWrapper'>
 					<h1 className='telemetry__headline'>Easy to use riding telemetry</h1>
