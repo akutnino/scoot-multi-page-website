@@ -8,20 +8,22 @@ import circle from '/src/assets/patterns/circle.svg';
 
 function Telemetry() {
 	return (
-		<section className='telemetry wrapper'>
-			<div className='telemetry__headlineWrapper'>
-				<div className='telemetry__contentWrapper'>
-					<h1 className='telemetry__headline'>Easy to use riding telemetry</h1>
-					<p className='telemetry__description'>
-						The Scoot app is available with riding telemetry. This means it can show you
-						your average speed, how long you've been using the scooter, your traveling
-						distance, and many more things all in an easy to use app.
-					</p>
-				</div>
+		<section className='telemetry'>
+			<div className='telemetry__contentWrapper'>
+				<div className='telemetry__headlineWrapper'>
+					<div className='telemetry__descriptionWrapper'>
+						<h1 className='telemetry__headline'>Easy to use riding telemetry</h1>
+						<p className='telemetry__description'>
+							The Scoot app is available with riding telemetry. This means it can show you
+							your average speed, how long you've been using the scooter, your traveling
+							distance, and many more things all in an easy to use app.
+						</p>
+					</div>
 
-				<CallToActionButton className='telemetry__callToActionButton'>
-					Learn More
-				</CallToActionButton>
+					<CallToActionButton className='telemetry__callToActionButton'>
+						Learn More
+					</CallToActionButton>
+				</div>
 			</div>
 
 			<div className='telemetry__backgroundImageWrapper'>
