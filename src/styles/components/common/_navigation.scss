@@ -5,15 +5,15 @@
 
 	&__wrapper {
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		margin: util.rem(20) auto;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__navListWrapper {
 		display: flex;
-		align-items: center;
 		height: fit-content;
+		align-items: center;
 	}
 
 	&__logoLink {
@@ -43,11 +43,10 @@
 	}
 
 	&__callToActionButton {
+		padding: util.rem(16) util.rem(40);
+		color: var(--color-Neutral-0);
 		background-color: var(--color-Amber-400);
 		border-style: none;
-		color: var(--color-Neutral-0);
-		padding: util.rem(16) util.rem(40);
-
 		@include util.text-preset-8;
 	}
 }
