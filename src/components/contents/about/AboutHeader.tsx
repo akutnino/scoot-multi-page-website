@@ -7,7 +7,7 @@ import white_circles from '/src/assets/patterns/white-circles.svg';
 function AboutHeader() {
 	return (
 		<header className='aboutHeader'>
-			<h1 className='aboutHeader__headline'>About</h1>
+			<h1 className='aboutHeader__headline wrapper'>About</h1>
 
 			<BackgroundPhoto
 				className='aboutHeader__backgroundPhoto'
