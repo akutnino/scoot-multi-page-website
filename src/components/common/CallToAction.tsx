@@ -9,7 +9,7 @@ import semi_circles from '/src/assets/patterns/semi-circles.svg';
 function CallToAction() {
 	return (
 		<section className='callToAction'>
-			<div className='callToAction__wrapper'>
+			<div className='callToAction__wrapper wrapper'>
 				<h1 className='callToAction__headline'>Sign up and Scoot off today</h1>
 
 				<ul className='callToAction__navLinks'>
