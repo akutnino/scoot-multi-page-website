@@ -1,25 +1,42 @@
 @use '/src/styles/utils/' as util;
 
 .callToAction {
+	position: relative;
+	display: flex;
+	height: util.rem(300);
+	margin-top: util.rem(200);
+	align-items: center;
+	background-color: var(--color-Slate-600);
+
 	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	&__headline {
+		max-width: util.rem(415);
+		color: var(--color-Neutral-0);
+		@include util.text-preset-2;
 	}
 
 	&__navLinks {
+		display: flex;
+		gap: util.rem(16);
+		list-style-type: none;
 	}
 
-	&__navItem {
-	}
-
-	&__iconLink {
-	}
-
+	&__navItem,
+	&__iconLink,
 	&__iconImage {
+		min-width: min-content;
+		min-height: min-content;
 	}
 
 	&__backgroundImage {
+		position: absolute;
+		right: util.rem(0);
+		bottom: util.rem(0);
 	}
 }
 
