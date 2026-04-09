@@ -1,31 +1,61 @@
 @use '/src/styles/utils/' as util;
 
 .footer {
+	display: flex;
+	height: util.rem(96);
+	background-color: var(--color-Slate-700);
+
 	&__wrapper {
+		display: flex;
+		align-self: center;
+		justify-content: space-between;
 	}
 
 	&__navListWrapper {
+		display: flex;
+		gap: util.rem(56);
 	}
 
 	&__logoImage {
+		filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(292deg) brightness(108%)
+			contrast(108%);
 	}
 
 	&__navList {
+		display: flex;
+		gap: util.rem(32);
+		list-style-type: none;
 	}
 
 	&__navItem {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__navLink {
+		flex-grow: 1;
+		align-content: center;
+		color: var(--color-Slate-400);
 	}
 
 	&__navLinks {
+		display: flex;
+		gap: util.rem(32);
+		list-style-type: none;
 	}
 
 	&__navItem {
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__iconLink {
+		flex-grow: 1;
+		align-content: center;
 	}
 
 	&__iconImage {
+		opacity: 1;
 	}
 }
 
