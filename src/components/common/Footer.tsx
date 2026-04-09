@@ -10,7 +10,7 @@ import twitter from '/src/assets/icons/twitter.svg';
 function Footer() {
 	return (
 		<footer className='footer'>
-			<div className='footer__wrapper'>
+			<div className='footer__wrapper wrapper'>
 				<nav className='footer__navListWrapper'>
 					<Link to={'/'}>
 						<LogoImage className='footer__logoImage' />
@@ -18,15 +18,30 @@ function Footer() {
 
 					<ul className='footer__navList'>
 						<li className='footer__navItem'>
-							<Link to={'/about'}>About</Link>
+							<Link
+								className='footer__navLink'
+								to={'/about'}
+							>
+								About
+							</Link>
 						</li>
 
 						<li className='footer__navItem'>
-							<Link to={'/careers'}>Careers</Link>
+							<Link
+								className='footer__navLink'
+								to={'/careers'}
+							>
+								Careers
+							</Link>
 						</li>
 
 						<li className='footer__navItem'>
-							<Link to={'/locations'}>Locations</Link>
+							<Link
+								className='footer__navLink'
+								to={'/locations'}
+							>
+								Locations
+							</Link>
 						</li>
 					</ul>
 				</nav>
