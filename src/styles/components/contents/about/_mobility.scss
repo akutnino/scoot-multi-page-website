@@ -1,0 +1,87 @@
+@use '/src/styles/utils/' as util;
+
+.mobility {
+	position: relative;
+	display: flex;
+	min-height: util.rem(445);
+	margin-top: util.rem(120);
+	justify-content: center;
+	overflow: hidden;
+
+	&__contentWrapper {
+		height: min-content;
+		align-self: center;
+	}
+
+	&__descriptionWrapper {
+		display: grid;
+		width: util.rem(445);
+		gap: util.rem(25);
+	}
+
+	&__headline {
+		color: var(--color-Slate-600);
+		@include util.text-preset-2;
+	}
+
+	&__description {
+		color: var(--color-Slate-400);
+		@include util.text-preset-10;
+	}
+
+	&__backgroundImageWrapper {
+		position: absolute;
+		display: flex;
+		width: max-content;
+		transform: translateX(50%);
+	}
+
+	&__digitalEraPhoto {
+		min-width: min-content;
+		min-height: min-content;
+		margin-left: util.rem(125);
+		border-radius: util.rem(500);
+	}
+
+	&__leftUpwardArrowImage {
+		position: absolute;
+		bottom: util.rem(30);
+		min-width: min-content;
+		min-height: min-content;
+	}
+
+	&__circleImage {
+		z-index: -1;
+		min-width: min-content;
+		min-height: min-content;
+		margin-left: util.rem(65);
+	}
+}
+
+@media (max-width: util.rem(1300)) {
+	.mobility {
+		&__contentWrapper {
+		}
+
+		&__descriptionWrapper {
+		}
+
+		&__headline {
+		}
+
+		&__description {
+		}
+
+		&__backgroundImageWrapper {
+		}
+
+		&__digitalEraPhoto {
+		}
+
+		&__leftUpwardArrowImage {
+		}
+
+		&__circleImage {
+		}
+	}
+}
