@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 
 function CallToActionButton({
 	className,
@@ -7,10 +7,22 @@ function CallToActionButton({
 	className: string;
 	children: ReactNode;
 }) {
+	const [btnClassName, setBtnClassName] = useState<string>('');
+
+	const handleMouseEnter = () => {
+		setBtnClassName('hovered');
+	};
+
+	const handleMouseLeave = () => {
+		setBtnClassName('');
+	};
+
 	return (
 		<button
-			className={className}
+			className={`${className} ${className}--${btnClassName}`}
 			type='button'
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
 		>
 			{children}
 		</button>
