@@ -45,6 +45,14 @@
 		background-color: var(--color-Amber-400);
 		border-style: none;
 		@include util.text-preset-8;
+
+		&--hovered {
+			padding: util.rem(14) util.rem(38);
+			color: var(--color-Amber-400);
+			background-color: transparent;
+			border: util.rem(2) solid var(--color-Amber-400);
+			cursor: pointer;
+		}
 	}
 
 	&__lineImage {
