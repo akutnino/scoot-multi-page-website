@@ -48,6 +48,7 @@
 		background-color: var(--color-Amber-400);
 		border-style: none;
 		@include util.text-preset-8;
+		cursor: pointer;
 	}
 }
 
