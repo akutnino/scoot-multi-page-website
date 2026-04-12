@@ -1,31 +1,71 @@
 @use '/src/styles/utils/' as util;
 
 .coreValues {
+	margin-top: util.rem(120);
+
 	&__headline {
+		color: var(--color-Slate-600);
+		text-align: center;
+		@include util.text-preset-2;
 	}
 
 	&__valueList {
+		display: flex;
+		margin-top: util.rem(105);
+		gap: util.rem(30);
 	}
 
 	&__valueItem {
+		list-style-type: none;
 	}
 
 	&__backgroundPhotoWrapper {
+		position: relative;
+		width: util.rem(240);
+		justify-self: center;
+		border: util.rem(1) solid transparent;
 	}
 
 	&__backgroundPhoto {
+		position: absolute;
+		z-index: -1;
+		border-radius: util.rem(200);
 	}
 
 	&__valueNumber {
+		z-index: 2;
+		display: flex;
+
+		width: util.rem(95);
+		height: util.rem(95);
+
+		margin-top: util.rem(180);
+		align-items: center;
+		justify-content: center;
+		justify-self: center;
+
+		color: var(--color-Slate-600);
+		background-color: var(--color-Amber-400);
+		border-radius: util.rem(200);
+		@include util.text-preset-5;
 	}
 
 	&__descriptionWrapper {
+		display: grid;
+		margin-top: util.rem(35);
+		gap: util.rem(25);
 	}
 
 	&__valueHeadline {
+		color: var(--color-Slate-600);
+		text-align: center;
+		@include util.text-preset-5;
 	}
 
 	&__valuedescription {
+		color: var(--color-Slate-400);
+		text-align: center;
+		@include util.text-preset-10;
 	}
 }
 
