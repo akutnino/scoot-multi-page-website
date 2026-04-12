@@ -6,7 +6,7 @@ import our_community from '/src/assets/images/our-community.jpg';
 
 function CoreValues({ headline }: { headline: string }) {
 	return (
-		<section className='coreValues'>
+		<section className='coreValues wrapper'>
 			<h1 className='coreValues__headline'>{headline}</h1>
 
 			<ul className='coreValues__valueList'>
