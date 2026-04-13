@@ -7,7 +7,7 @@ import white_circles from '/src/assets/patterns/white-circles.svg';
 function CareersHeader() {
 	return (
 		<header className='careersHeader'>
-			<h1 className='careersHeader__headline'>Careers</h1>
+			<h1 className='careersHeader__headline wrapper'>Careers</h1>
 
 			<BackgroundPhoto
 				className='careersHeader__backgroundPhoto'
