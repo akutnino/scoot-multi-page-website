@@ -37,7 +37,7 @@ function FrequentlyAskedQuestions() {
 	}, [accordions.length]);
 
 	return (
-		<section className='frequentlyAskedQuestions'>
+		<section className='frequentlyAskedQuestions wrapper'>
 			<h1 className='frequentlyAskedQuestions__headline'>FAQs</h1>
 
 			<div className='frequentlyAskedQuestions__wrapper'>
