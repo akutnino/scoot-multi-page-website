@@ -1,13 +1,32 @@
 @use '/src/styles/utils/' as util;
 
 .careersHeader {
+	display: grid;
+	grid-template-areas: 'stack';
+	overflow: hidden;
+
 	&__headline {
+		z-index: 1;
+		max-height: min-content;
+		grid-area: stack;
+		align-self: center;
+		color: var(--color-Neutral-0);
+		@include util.text-preset-1;
 	}
 
 	&__backgroundPhoto {
+		z-index: -1;
+		width: 100%;
+		grid-area: stack;
 	}
 
 	&__whiteCirclesImage {
+		position: relative;
+		right: util.rem(-30);
+		z-index: 1;
+		grid-area: stack;
+		align-self: center;
+		justify-self: end;
 	}
 }
 
