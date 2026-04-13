@@ -1,16 +1,35 @@
 @use '/src/styles/utils/' as util;
 
 .accordionSet {
+	padding: util.rem(35) util.rem(40);
+	background-color: var(--color-Slate-50);
+
 	&__toggleButton {
+		display: flex;
+		width: util.rem(750);
+		justify-content: space-between;
+		background-color: var(--color-Slate-50);
+		border-style: none;
+		cursor: pointer;
+		@include util.text-preset-10;
 	}
 
 	&__question {
+		width: max-content;
+		color: var(--color-Slate-600);
 	}
 
 	&__chevronImage {
+		width: min-content;
+		height: min-content;
+		align-self: center;
 	}
 
 	&__answer {
+		width: util.rem(650);
+		margin-top: util.rem(35);
+		color: var(--color-Slate-600);
+		@include util.text-preset-10;
 	}
 }
 
