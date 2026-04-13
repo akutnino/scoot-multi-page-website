@@ -9,19 +9,21 @@ import circle from '/src/assets/patterns/circle.svg';
 function Mission() {
 	return (
 		<section className='mission'>
-			<div className='mission__headlineWrapper'>
-				<div className='mission__contentWrapper'>
-					<h1 className='mission__headline'>Easy to use riding mission</h1>
-					<p className='mission__description'>
-						The Scoot app is available with riding mission. This means it can show you
-						your average speed, how long you've been using the scooter, your traveling
-						distance, and many more things all in an easy to use app.
-					</p>
-				</div>
+			<div className='mission__contentWrapper'>
+				<div className='mission__headlineWrapper'>
+					<div className='mission__descriptionWrapper'>
+						<h1 className='mission__headline'>Easy to use riding mission</h1>
+						<p className='mission__description'>
+							The Scoot app is available with riding mission. This means it can show you
+							your average speed, how long you've been using the scooter, your traveling
+							distance, and many more things all in an easy to use app.
+						</p>
+					</div>
 
-				<CallToActionButton className='mission__callToActionButton'>
-					Learn More
-				</CallToActionButton>
+					<CallToActionButton className='mission__callToActionButton'>
+						Learn More
+					</CallToActionButton>
+				</div>
 			</div>
 
 			<div className='mission__backgroundImageWrapper'>
