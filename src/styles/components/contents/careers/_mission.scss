@@ -1,31 +1,85 @@
 @use '/src/styles/utils/' as util;
 
 .mission {
-	&__headlineWrapper {
-	}
+	position: relative;
+	display: flex;
+	min-height: util.rem(445);
+	margin-top: util.rem(120);
+	justify-content: center;
+	overflow: hidden;
 
 	&__contentWrapper {
+		display: flex;
+		width: min(100% - util.rem(80), util.rem(1300));
+	}
+
+	&__headlineWrapper {
+		display: grid;
+		max-width: util.rem(445);
+		min-height: util.rem(320);
+		align-self: center;
+		gap: util.rem(40);
+	}
+
+	&__descriptionWrapper {
+		display: grid;
+		gap: util.rem(25);
 	}
 
 	&__headline {
+		color: var(--color-Slate-600);
+		@include util.text-preset-2;
 	}
 
 	&__description {
+		color: var(--color-Slate-400);
+		@include util.text-preset-10;
 	}
 
 	&__callToActionButton {
+		max-width: util.rem(172);
+		min-height: util.rem(57);
+		padding: util.rem(16) util.rem(40);
+		color: var(--color-Neutral-0);
+		background-color: var(--color-Amber-400);
+		border-style: none;
+		@include util.text-preset-8;
+
+		&--hovered {
+			padding: util.rem(0);
+			color: var(--color-Amber-400);
+			background-color: var(--color-Neutral-0);
+			border: util.rem(2) solid var(--color-Amber-400);
+			cursor: pointer;
+		}
 	}
 
 	&__backgroundImageWrapper {
+		position: absolute;
+		display: flex;
+		width: max-content;
+		transform: translateX(50%);
 	}
 
 	&__missionImage {
+		min-width: min-content;
+		min-height: min-content;
+		margin-left: util.rem(125);
+		border-radius: util.rem(500);
 	}
 
 	&__leftDownwardArrowImage {
+		position: absolute;
+		bottom: util.rem(0);
+		min-width: min-content;
+		min-height: min-content;
 	}
 
 	&__circleImage {
+		z-index: -1;
+		min-width: min-content;
+		min-height: min-content;
+		margin-left: util.rem(65);
 	}
 }
 
