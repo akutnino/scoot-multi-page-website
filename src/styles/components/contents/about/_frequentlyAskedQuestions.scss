@@ -1,16 +1,30 @@
 @use '/src/styles/utils/' as util;
 
 .frequentlyAskedQuestions {
+	display: grid;
+	margin-top: util.rem(125);
+	gap: util.rem(65);
+
 	&__headline {
+		color: var(--color-Slate-600);
+		text-align: center;
+		@include util.text-preset-2;
 	}
 
 	&__wrapper {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__accordionHeadline {
+		height: min-content;
+		color: var(--color-Slate-600);
+		@include util.text-preset-3;
 	}
 
 	&__accordionWrapper {
+		display: grid;
+		gap: util.rem(20);
 	}
 }
 
