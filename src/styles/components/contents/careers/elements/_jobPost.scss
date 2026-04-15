@@ -1,16 +1,34 @@
 @use '/src/styles/utils/' as util;
 
 .jobPost {
+	background-color: var(--color-Slate-50);
+
 	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin: util.rem(35) util.rem(40);
 	}
 
 	&__descriptionWrapper {
+		opacity: 1;
 	}
 
-	&__jobPosition {
-	}
-
+	&__jobPosition,
 	&__jobLocation {
+		color: var(--color-Slate-600);
+	}
+
+	&__applyBtn {
+		padding: util.rem(16) util.rem(40);
+		color: var(--color-Neutral-0);
+		background-color: var(--color-Amber-400);
+		border-style: none;
+		height: min-content;
+		width: util.rem(180);
+		margin-right: util.rem(20);
+		align-self: center;
+		@include util.text-preset-8;
+		cursor: pointer;
 	}
 }
 
@@ -26,6 +44,9 @@
 		}
 
 		&__jobLocation {
+		}
+
+		&__applyBtn {
 		}
 	}
 }
