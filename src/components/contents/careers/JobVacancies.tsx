@@ -2,7 +2,7 @@ import JobPost from './elements/JobPost.tsx';
 
 function JobVacancies() {
 	return (
-		<section className='jobVacancies'>
+		<section className='jobVacancies wrapper'>
 			<JobPost
 				jobPosition='General Manager'
 				jobLocation='Jakarta, Indonesia'
