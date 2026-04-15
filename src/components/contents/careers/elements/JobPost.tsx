@@ -15,7 +15,7 @@ function JobPost({
 					<p className='jobPost__jobLocation'>{jobLocation}</p>
 				</div>
 
-				<CallToActionButton className='jobPost'>Apply</CallToActionButton>
+				<CallToActionButton className='jobPost__applyBtn'>Apply</CallToActionButton>
 			</div>
 		</article>
 	);
