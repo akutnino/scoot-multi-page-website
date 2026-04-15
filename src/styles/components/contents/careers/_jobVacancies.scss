@@ -1,6 +1,9 @@
 @use '/src/styles/utils/' as util;
 
 .jobVacancies {
+	display: grid;
+	gap: util.rem(30);
+	margin-top: util.rem(125);
 }
 
 @media (max-width: util.rem(1300)) {
