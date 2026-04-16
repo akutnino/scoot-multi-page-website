@@ -2,8 +2,8 @@
 
 .jobVacancies {
 	display: grid;
-	gap: util.rem(30);
 	margin-top: util.rem(125);
+	gap: util.rem(30);
 }
 
 @media (max-width: util.rem(1300)) {

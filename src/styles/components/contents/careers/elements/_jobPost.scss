@@ -5,8 +5,8 @@
 
 	&__wrapper {
 		display: flex;
-		justify-content: space-between;
 		margin: util.rem(35) util.rem(40);
+		justify-content: space-between;
 	}
 
 	&__descriptionWrapper {
@@ -19,14 +19,14 @@
 	}
 
 	&__applyBtn {
+		width: util.rem(180);
+		height: min-content;
+		margin-right: util.rem(20);
 		padding: util.rem(16) util.rem(40);
+		align-self: center;
 		color: var(--color-Neutral-0);
 		background-color: var(--color-Amber-400);
 		border-style: none;
-		height: min-content;
-		width: util.rem(180);
-		margin-right: util.rem(20);
-		align-self: center;
 		@include util.text-preset-8;
 		cursor: pointer;
 	}
