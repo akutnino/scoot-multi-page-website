@@ -5,7 +5,7 @@ import world_map_desktop from '/src/assets/images/world-map-desktop.png';
 
 function MapLocations() {
 	return (
-		<section className='mapLocations'>
+		<section className='mapLocations wrapper'>
 			<div className='mapLocations__backgroundPhotoWrapper'>
 				<BackgroundPhoto
 					className='mapLocations__mapBackgroundPhoto'
@@ -13,10 +13,25 @@ function MapLocations() {
 					alt='world map outline photo'
 				/>
 
-				<div className='mapLocations__cityLocation'>New York</div>
-				<div className='mapLocations__cityLocation'>London</div>
-				<div className='mapLocations__cityLocation'>Yokoyama</div>
-				<div className='mapLocations__cityLocation'>Jakarta</div>
+				<div className='mapLocations__cityWrapper'>
+					<h1 className='mapLocations__city'>New York</h1>
+					<div className='mapLocations__pointer' />
+				</div>
+
+				<div className='mapLocations__cityWrapper'>
+					<h1 className='mapLocations__city'>London</h1>
+					<div className='mapLocations__pointer' />
+				</div>
+
+				<div className='mapLocations__cityWrapper'>
+					<h1 className='mapLocations__city'>Yokoyama</h1>
+					<div className='mapLocations__pointer' />
+				</div>
+
+				<div className='mapLocations__cityWrapper'>
+					<h1 className='mapLocations__city'>Jakarta</h1>
+					<div className='mapLocations__pointer' />
+				</div>
 			</div>
 
 			<div className='mapLocations__contentWrapper'>
