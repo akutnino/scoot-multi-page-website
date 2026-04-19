@@ -1,28 +1,124 @@
 @use '/src/styles/utils/' as util;
 
 .mapLocations {
+	// overflow: hidden;
+	display: grid;
+	margin-top: util.rem(120);
+	gap: util.rem(120);
+
 	&__backgroundPhotoWrapper {
+		position: relative;
+		display: grid;
+		grid-template-areas: 'stack';
 	}
 
 	&__mapBackgroundPhoto {
+		width: 100%;
+		grid-area: stack;
 	}
 
-	&__cityLocation {
+	&__cityWrapper {
+		position: relative;
+		display: flex;
+
+		// query in the useeffect.
+		width: util.rem(190);
+		height: util.rem(90);
+		//
+
+		flex-direction: column;
+		grid-area: stack;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--color-Amber-400);
+
+		&:nth-of-type(1) {
+			// New York
+			position: absolute;
+			top: 12%;
+			right: 78%;
+			width: util.rem(190);
+			transform: translateX(50%);
+		}
+
+		&:nth-of-type(2) {
+			// London
+			position: absolute;
+			top: 3%;
+			right: 56%;
+			width: util.rem(190);
+			transform: translateX(50%);
+		}
+
+		&:nth-of-type(3) {
+			// Yokohama
+			position: absolute;
+			top: 14.5%;
+			right: 14.5%;
+			width: util.rem(190);
+			transform: translateX(50%);
+		}
+
+		&:nth-of-type(4) {
+			// Jarkarta
+			position: absolute;
+			top: 46%;
+			right: 21%;
+			width: util.rem(190);
+			transform: translateX(50%);
+		}
+	}
+
+	&__city {
+		color: var(--color-Slate-600);
+
+		// query in the useeffect.
+		@include util.text-preset-5;
+		//
+	}
+
+	&__pointer {
+		position: absolute;
+		bottom: util.rem(-10);
+		z-index: -1;
+		width: util.rem(30);
+		height: util.rem(30);
+		background-color: var(--color-Amber-400);
+		transform: rotate(45deg);
 	}
 
 	&__contentWrapper {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&__descriptionWrapper {
+		display: flex;
+		gap: util.rem(30);
 	}
 
 	&__headline {
+		max-width: util.rem(350);
+		color: var(--color-Slate-600);
+		@include util.text-preset-2;
 	}
 
 	&__description {
+		width: util.rem(500);
+		color: var(--color-Slate-400);
+		@include util.text-preset-10;
 	}
 
 	&__messageUsButton {
+		width: util.rem(180);
+		height: min-content;
+		padding: util.rem(16) util.rem(40);
+		align-self: center;
+		color: var(--color-Neutral-0);
+		background-color: var(--color-Amber-400);
+		border-style: none;
+		@include util.text-preset-8;
+		cursor: pointer;
 	}
 }
 
