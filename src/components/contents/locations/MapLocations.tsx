@@ -5,82 +5,86 @@ import CallToActionButton from '../../common/CallToActionButton.tsx';
 
 import world_map_desktop from '/src/assets/images/world-map-desktop.png';
 
+// const componentObserver = new ResizeObserver(callback);
+// componentObserver.observe(ref.current);
+// componentObserver.disconnect();
+
 function MapLocations() {
 	const [componentWidth, setComponentWidth] = useState<number | null>(null);
-	const mapLocationsRef = useRef<HTMLSelectElement>(null);
+	const [componentHeight, setComponentHeight] = useState<number | null>(null);
 
-	const newYorkPinRef = useRef<HTMLDivElement>(null);
-	const londonPinRef = useRef<HTMLDivElement>(null);
-	const yokohamaPinRef = useRef<HTMLDivElement>(null);
-	const jakartaPinRef = useRef<HTMLDivElement>(null);
+	const commponentRef = useRef<HTMLSelectElement>(null);
+	const newYorkRef = useRef<HTMLDivElement>(null);
+	const londonRef = useRef<HTMLDivElement>(null);
+	const yokohamaRef = useRef<HTMLDivElement>(null);
+	const jakartaRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
+		const COMPONENT_MAX_WIDTH: number = 1300;
+		const LOCATION_MAX_HEIGHT: number = 90;
+		const LOCATION_MIN_HEIGHT: number = 32;
+
 		const [
-			NewYorkDivElement,
-			LondonDivElement,
-			YokohamaDivElement,
-			JakartaDivElement,
+			NewYorkElement,
+			LondonElement,
+			YokohamaElement,
+			JakartaElement,
 		]: HTMLCollectionOf<Element> = document.getElementsByClassName(
 			'mapLocations__cityWrapper'
 		);
 
 		const handleComponentResize = (entries: ResizeObserverEntry[]) => {
 			const entry: ResizeObserverEntry = entries[0];
-			const mapLocationsWidth: number = entry.contentRect.width;
+			const UPDATED_COMPONENT_WIDTH: number = entry.contentRect.width;
 
-			if (mapLocationsWidth < 1300) {
-				console.log(mapLocationsWidth);
-				setComponentWidth(mapLocationsWidth);
+			if (UPDATED_COMPONENT_WIDTH < COMPONENT_MAX_WIDTH) {
+				console.log(componentWidth);
+				setComponentWidth(UPDATED_COMPONENT_WIDTH);
 			}
 		};
 
 		const handleLocationsResize = (entries: ResizeObserverEntry[]) => {
 			const entry: ResizeObserverEntry = entries[0];
-			const cityWrapperHeight: number = entry.contentRect.height;
+			const UPDATED_LOCATION_COMPONENT_HEIGHT: number = entry.contentRect.height;
 
 			if (componentWidth === null) return;
-			if (componentWidth < 1300 && cityWrapperHeight <= 90 && cityWrapperHeight >= 32) {
-				console.log(cityWrapperHeight);
+			setComponentHeight(UPDATED_LOCATION_COMPONENT_HEIGHT);
+
+			if (
+				componentWidth < COMPONENT_MAX_WIDTH &&
+				UPDATED_LOCATION_COMPONENT_HEIGHT <= LOCATION_MAX_HEIGHT &&
+				UPDATED_LOCATION_COMPONENT_HEIGHT > LOCATION_MIN_HEIGHT
+			) {
+				if (componentHeight === null) return;
+				console.log(componentHeight);
 
 				//MAYBE USE USEREF TO ACCESS THE PREVIOUS STATE?!
-				NewYorkDivElement.setAttribute('style', `height: ${cityWrapperHeight - 1}px`);
-				LondonDivElement.setAttribute('style', `height: ${cityWrapperHeight - 1}px`);
-				YokohamaDivElement.setAttribute('style', `height: ${cityWrapperHeight - 1}px`);
-				JakartaDivElement.setAttribute('style', `height: ${cityWrapperHeight - 1}px`);
+				const updatedHeight =
+					UPDATED_LOCATION_COMPONENT_HEIGHT > componentHeight
+						? componentHeight - 1
+						: componentHeight + 1;
+
+				NewYorkElement.setAttribute('style', `height: ${updatedHeight}px`);
 			}
 		};
 
 		const componentObserver = new ResizeObserver(handleComponentResize);
-		const NewYorkDivObserver = new ResizeObserver(handleLocationsResize);
-		const LondonDivObserver = new ResizeObserver(handleLocationsResize);
-		const YokohamaDivObserver = new ResizeObserver(handleLocationsResize);
-		const JakartaDivObserver = new ResizeObserver(handleLocationsResize);
+		const NewYorkObserver = new ResizeObserver(handleLocationsResize);
 
-		if (mapLocationsRef.current === null) return;
-		if (newYorkPinRef.current === null) return;
-		if (londonPinRef.current === null) return;
-		if (yokohamaPinRef.current === null) return;
-		if (jakartaPinRef.current === null) return;
-
-		componentObserver.observe(mapLocationsRef.current);
-		NewYorkDivObserver.observe(newYorkPinRef.current);
-		LondonDivObserver.observe(londonPinRef.current);
-		YokohamaDivObserver.observe(yokohamaPinRef.current);
-		JakartaDivObserver.observe(jakartaPinRef.current);
+		if (commponentRef.current === null || newYorkRef.current === null) return;
+		componentObserver.observe(commponentRef.current);
+		NewYorkObserver.observe(newYorkRef.current);
 
 		return () => {
 			componentObserver.disconnect();
-			NewYorkDivObserver.disconnect();
-			LondonDivObserver.disconnect();
-			YokohamaDivObserver.disconnect();
-			JakartaDivObserver.disconnect();
+			NewYorkObserver.disconnect();
 		};
-	}, [componentWidth]);
+	}, [componentWidth, componentHeight]);
 
 	return (
 		<section
 			className='mapLocations wrapper'
-			ref={mapLocationsRef}
+			ref={commponentRef}
 		>
 			<div className='mapLocations__backgroundPhotoWrapper'>
 				<BackgroundPhoto
@@ -91,7 +95,7 @@ function MapLocations() {
 
 				<div
 					className='mapLocations__cityWrapper'
-					ref={newYorkPinRef}
+					ref={newYorkRef}
 				>
 					<h1 className='mapLocations__city'>New York</h1>
 					<div className='mapLocations__pointer' />
@@ -99,7 +103,7 @@ function MapLocations() {
 
 				<div
 					className='mapLocations__cityWrapper'
-					ref={londonPinRef}
+					ref={londonRef}
 				>
 					<h1 className='mapLocations__city'>London</h1>
 					<div className='mapLocations__pointer' />
@@ -107,7 +111,7 @@ function MapLocations() {
 
 				<div
 					className='mapLocations__cityWrapper'
-					ref={yokohamaPinRef}
+					ref={yokohamaRef}
 				>
 					<h1 className='mapLocations__city'>Yokoyama</h1>
 					<div className='mapLocations__pointer' />
@@ -115,7 +119,7 @@ function MapLocations() {
 
 				<div
 					className='mapLocations__cityWrapper'
-					ref={jakartaPinRef}
+					ref={jakartaRef}
 				>
 					<h1 className='mapLocations__city'>Jakarta</h1>
 					<div className='mapLocations__pointer' />
