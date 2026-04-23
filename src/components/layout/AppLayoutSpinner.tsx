@@ -4,7 +4,7 @@ import AppLayout from './AppLayout.tsx';
 function AppLayoutSpinner() {
 	return (
 		<AppLayout>
-			<div className='appLayoutSpinner'>LoadingSpinner</div>
+			<div className='appLayoutSpinner wrapper' />
 		</AppLayout>
 	);
 }
