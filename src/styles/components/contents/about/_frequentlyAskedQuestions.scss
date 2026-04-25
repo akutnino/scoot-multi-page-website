@@ -3,6 +3,7 @@
 .frequentlyAskedQuestions {
 	display: grid;
 	margin-top: util.rem(125);
+	margin-bottom: util.rem(160);
 	gap: util.rem(65);
 
 	&__headline {
