@@ -1,11 +1,10 @@
 @use '/src/styles/utils/' as util;
 
 .appLayoutSpinner {
-	width: util.rem(500);
-	margin-top: util.rem(200);
+	width: util.rem(50);
 	aspect-ratio: 1;
 	border-radius: 50%;
-	border: util.rem(50) solid;
+	border: util.rem(8) solid;
 	border-color: var(--color-Amber-400) #0000;
 	animation: l1 1s infinite;
 
