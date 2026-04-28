@@ -10,6 +10,24 @@ import world_map_desktop from '/src/assets/images/world-map-desktop.png';
 // componentObserver.disconnect();
 
 function MapLocations() {
+	/**
+	 * the max width of the component is 1300px
+	 * the width of the citywrapper is 190px
+	 *
+	 * i need to track the changes in width of the component.
+	 * by maybe using a useref or usestate. but i dont know which one to use.
+	 * let me think.
+	 *
+	 * first, i need to store the component's width value. useref or usestate?
+	 * i think useref bc i dont need it to cause a rerender just yet...
+	 *
+	 * so the dynamic width value of the component will be stored in a useref.
+	 * beacuse it can be increased or decreased without rerenders.
+	 *
+	 * on the other hand, wait let me think...
+	 * if the the component width decreses,
+	 */
+
 	const [componentWidth, setComponentWidth] = useState<number | null>(null);
 	const [componentHeight, setComponentHeight] = useState<number | null>(null);
 
