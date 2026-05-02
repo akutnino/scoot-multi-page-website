@@ -1,35 +1,39 @@
 @use '/src/styles/utils/' as util;
 
 .mapLocations {
-	// overflow: hidden;
 	display: grid;
 	margin-top: util.rem(120);
 	margin-bottom: util.rem(120);
 	gap: util.rem(120);
+	overflow: hidden;
 
 	&__backgroundPhotoWrapper {
 		position: relative;
 		display: grid;
-		grid-template-areas: 'stack';
+		height: util.rem(636);
 	}
 
 	&__mapBackgroundPhoto {
-		width: 100%;
-		height: util.rem(542);
-		grid-area: stack;
+		position: absolute;
+		right: 50%;
+		min-width: util.rem(1300);
+		transform: translateX(50%);
+	}
+
+	&__cityPointerWrapper {
+		position: absolute;
+		right: 50%;
+		min-width: util.rem(1300);
+		height: util.rem(636);
+		transform: translateX(50%);
 	}
 
 	&__cityWrapper {
 		position: relative;
 		display: flex;
-
-		// query in the useeffect.
 		width: util.rem(190);
 		height: util.rem(90);
-		//
-
 		flex-direction: column;
-		grid-area: stack;
 		align-items: center;
 		justify-content: center;
 		background-color: var(--color-Amber-400);
@@ -73,10 +77,7 @@
 
 	&__city {
 		color: var(--color-Slate-600);
-
-		// query in the useeffect.
 		@include util.text-preset-5;
-		//
 	}
 
 	&__pointer {
