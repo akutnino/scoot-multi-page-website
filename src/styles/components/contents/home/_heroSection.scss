@@ -100,33 +100,44 @@
 	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(1360)) {
 	.heroSection {
-		&__headlineWrapper {
+		&__container {
+			position: absolute;
+			left: 50%;
+			min-width: util.rem(1150);
+			transform: translateX(-50%);
 		}
 
-		&__headline {
+		&__headlineWrapper,
+		&__callToActionButton {
+			justify-self: center;
+		}
+
+		&__headline,
+		&__description {
+			text-align: center;
 		}
 
 		&__descriptionWrapper {
-		}
-
-		&__description {
-		}
-
-		&__callToActionButton {
-		}
-
-		&__backgroundPhoto {
+			place-self: center;
 		}
 
 		&__lineImage {
+			display: none;
 		}
 
 		&__rightArrowImage {
+			top: util.rem(315);
+			left: util.rem(0);
+		}
+
+		&__backgroundPhoto {
+			opacity: 1;
 		}
 
 		&__whiteCirclesImage {
+			top: util.rem(240);
 		}
 	}
 }
