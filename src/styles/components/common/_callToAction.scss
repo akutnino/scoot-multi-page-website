@@ -39,27 +39,23 @@
 	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(900)) {
 	.callToAction {
 		&__wrapper {
+			flex-direction: column;
+			gap: util.rem(40);
 		}
 
 		&__headline {
+			text-align: center;
 		}
 
-		&__navLinks {
-		}
-
-		&__navItem {
-		}
-
-		&__iconLink {
-		}
-
-		&__iconImage {
-		}
-
+		&__navLinks,
+		&__navItem,
+		&__iconLink,
+		&__iconImage,
 		&__backgroundImage {
+			opacity: 1;
 		}
 	}
 }
