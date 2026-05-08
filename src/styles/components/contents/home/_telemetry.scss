@@ -85,6 +85,7 @@
 
 @media (max-width: util.rem(1000)) {
 	.telemetry {
+		margin-top: util.rem(130);
 		flex-direction: column-reverse;
 		gap: util.rem(65);
 
