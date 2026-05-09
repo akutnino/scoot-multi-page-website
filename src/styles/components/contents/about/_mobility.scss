@@ -11,6 +11,7 @@
 	&__contentWrapper {
 		height: min-content;
 		align-self: center;
+		width: min(100% - util.rem(80), util.rem(1300));
 	}
 
 	&__descriptionWrapper {
@@ -58,7 +59,7 @@
 	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(1000)) {
 	.mobility {
 		&__contentWrapper {
 		}
