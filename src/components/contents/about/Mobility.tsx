@@ -8,7 +8,7 @@ import circle from '/src/assets/patterns/circle.svg';
 function Mobility() {
 	return (
 		<section className='mobility'>
-			<div className='mobility__contentWrapper wrapper'>
+			<div className='mobility__contentWrapper'>
 				<div className='mobility__descriptionWrapper'>
 					<h1 className='mobility__headline'>Mobility for the digital era</h1>
 					<p className='mobility__description'>
