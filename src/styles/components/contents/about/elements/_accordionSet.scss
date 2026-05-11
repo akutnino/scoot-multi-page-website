@@ -33,18 +33,20 @@
 	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(1200)) {
 	.accordionSet {
-		&__toggleButton {
+		&__toggleButton,
+		&__answer {
+			width: 100%;
 		}
 
 		&__question {
+			width: fit-content;
+			text-align: start;
 		}
 
 		&__chevronImage {
-		}
-
-		&__answer {
+			opacity: 1;
 		}
 	}
 }
