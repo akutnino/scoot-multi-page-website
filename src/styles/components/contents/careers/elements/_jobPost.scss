@@ -32,21 +32,25 @@
 	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(820)) {
 	.jobPost {
 		&__wrapper {
+			flex-direction: column;
+			gap: util.rem(16);
 		}
 
 		&__descriptionWrapper {
+			text-align: center;
 		}
 
-		&__jobPosition {
-		}
-
+		&__jobPosition,
 		&__jobLocation {
+			opacity: 1;
 		}
 
 		&__applyBtn {
+			margin-right: util.rem(0);
+			width: 100%;
 		}
 	}
 }
