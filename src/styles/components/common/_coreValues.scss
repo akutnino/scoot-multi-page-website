@@ -69,33 +69,23 @@
 	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(1000)) {
 	.coreValues {
-		&__headline {
+		max-width: util.rem(600);
+
+		&__headline,
+		&__valueItem,
+		&__backgroundPhotoWrapper,
+		&__backgroundPhoto,
+		&__valueNumber,
+		&__descriptionWrapper,
+		&__valueHeadline,
+		&__valuedescription {
+			opacity: 1;
 		}
 
 		&__valueList {
-		}
-
-		&__valueItem {
-		}
-
-		&__backgroundPhotoWrapper {
-		}
-
-		&__backgroundPhoto {
-		}
-
-		&__valueNumber {
-		}
-
-		&__descriptionWrapper {
-		}
-
-		&__valueHeadline {
-		}
-
-		&__valuedescription {
+			flex-direction: column;
 		}
 	}
 }
