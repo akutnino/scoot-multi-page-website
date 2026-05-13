@@ -1,7 +1,10 @@
 @use '/src/styles/utils/' as util;
 
 .aboutHeader {
+	position: relative;
 	display: grid;
+	min-height: util.rem(200);
+	max-height: util.rem(250);
 	grid-template-areas: 'stack';
 	overflow: hidden;
 
@@ -17,6 +20,8 @@
 	&__backgroundPhoto {
 		z-index: -1;
 		width: 100%;
+		min-height: util.rem(200);
+		max-height: util.rem(250);
 		grid-area: stack;
 	}
 
@@ -36,6 +41,10 @@
 		}
 
 		&__backgroundPhoto {
+			position: absolute;
+			left: 50%;
+			min-width: util.rem(1200);
+			transform: translateX(-50%);
 		}
 
 		&__whiteCirclesImage {
