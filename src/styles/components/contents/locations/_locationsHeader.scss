@@ -51,3 +51,18 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(750)) {
+	.locationsHeader {
+		&__headline {
+			text-align: center;
+		}
+
+		&__backgroundPhoto {
+		}
+
+		&__whiteCirclesImage {
+			display: none;
+		}
+	}
+}
