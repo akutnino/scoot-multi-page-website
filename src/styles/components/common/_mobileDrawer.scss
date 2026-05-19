@@ -1,9 +1,40 @@
 @use '/src/styles/utils/' as util;
 
 .mobileDrawer {
+	&__dialog {
+	}
+
+	&__navList {
+	}
+
+	&__navItem {
+	}
+
+	&__navLink {
+	}
+
+	&__callToActionButton {
+	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(720)) {
 	.mobileDrawer {
+		&__dialog {
+		}
+
+		&__dialog::backdrop {
+		}
+
+		&__navList {
+		}
+
+		&__navItem {
+		}
+
+		&__navLink {
+		}
+
+		&__callToActionButton {
+		}
 	}
 }
