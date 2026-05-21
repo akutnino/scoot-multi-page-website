@@ -5,7 +5,7 @@
 
 	&__wrapper {
 		display: flex;
-		margin: util.rem(20) auto;
+		height: util.rem(96);
 		align-items: center;
 		justify-content: space-between;
 	}
@@ -14,6 +14,15 @@
 		display: flex;
 		height: fit-content;
 		align-items: center;
+	}
+
+	&__openButton {
+		display: none;
+	}
+
+	&__buttonImage--toggled,
+	&__buttonImage--isToggled {
+		opacity: 1;
 	}
 
 	&__logoLink {
@@ -52,21 +61,38 @@
 	}
 }
 
-@media (max-width: util.rem(1300)) {
+@media (max-width: util.rem(720)) {
 	.navigation {
 		&__wrapper {
 		}
 
 		&__navListWrapper {
+			width: 100%;
+		}
+
+		&__openButton {
+			display: block;
+			border: none;
+			height: util.rem(20);
+			width: util.rem(20);
+		}
+
+		&__buttonImage--toggled {
+		}
+
+		&__buttonImage--isToggled {
 		}
 
 		&__logoLink {
+			margin-right: util.rem(0);
+			margin-inline: auto;
 		}
 
 		&__logoImage {
 		}
 
 		&__navList {
+			display: none;
 		}
 
 		&__navItem {
@@ -76,6 +102,7 @@
 		}
 
 		&__callToActionButton {
+			display: none;
 		}
 	}
 }
