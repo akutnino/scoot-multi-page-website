@@ -3,7 +3,6 @@ import type { NavigationInitialStateType } from '../../_types/stores/reducers/na
 import { navigationTypes } from '../_constants/navigationTypes.ts';
 
 const NAVIGATION_INITIAL_STATE: NavigationInitialStateType = {
-	dialogRef: null,
 	isIconToggled: false,
 };
 
@@ -15,14 +14,7 @@ function navigationReducer(
 		case navigationTypes.NAVIGATION_DIALOG_TOGGLE: {
 			return {
 				...currentState,
-				isIconToggled: currentState.isIconToggled!,
-			};
-		}
-
-		case navigationTypes.NAVIGATION_ADD_REF: {
-			return {
-				...currentState,
-				dialogRef: action.payload,
+				isIconToggled: !currentState.isIconToggled,
 			};
 		}
 
