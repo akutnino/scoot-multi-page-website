@@ -9,7 +9,6 @@
 	overflow: hidden;
 
 	&__headline {
-		z-index: 1;
 		max-height: min-content;
 		grid-area: stack;
 		align-self: center;
@@ -28,7 +27,6 @@
 	&__whiteCirclesImage {
 		position: relative;
 		right: util.rem(-30);
-		z-index: 1;
 		grid-area: stack;
 		align-self: center;
 		justify-self: end;
