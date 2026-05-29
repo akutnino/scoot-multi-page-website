@@ -1,25 +1,60 @@
 @use '/src/styles/utils/' as util;
 
+html:has(.mobileDrawer__dialog[open]) {
+	overflow: hidden;
+}
+
 .mobileDrawer {
 	&__dialog {
+		z-index: 1;
+		height: calc(100% - util.rem(96));
+		width: 70%;
+		padding: util.rem(25);
+		border-style: none;
+		background-color: var(--color-Slate-700);
+	}
+
+	&__overlay {
+		z-index: 1;
+		position: absolute;
+		width: 100%;
+		height: calc(100% - util.rem(96));
+		background-color: var(--color-Neutral-950);
+		opacity: 0.8;
 	}
 
 	&__navList {
+		list-style-type: none;
 	}
 
 	&__navItem {
+		margin-top: util.rem(25);
 	}
 
 	&__navLink {
+		color: var(--color-Slate-100);
+		@include util.text-preset-5;
 	}
 
 	&__callToActionButton {
+		padding: util.rem(16) util.rem(40);
+		color: var(--color-Neutral-0);
+		background-color: var(--color-Amber-400);
+		border-style: none;
+		@include util.text-preset-8;
+		cursor: pointer;
+		position: absolute;
+		bottom: util.rem(0);
+		margin-bottom: util.rem(25);
 	}
 }
 
 @media (max-width: util.rem(720)) {
 	.mobileDrawer {
 		&__dialog {
+		}
+
+		&__overlay {
 		}
 
 		&__dialog::backdrop {
