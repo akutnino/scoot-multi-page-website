@@ -27,8 +27,8 @@
 		color: var(--color-Neutral-0);
 		background-color: var(--color-Amber-400);
 		border-style: none;
-		@include util.text-preset-8;
 		cursor: pointer;
+		@include util.text-preset-8;
 	}
 }
 
@@ -49,8 +49,8 @@
 		}
 
 		&__applyBtn {
-			margin-right: util.rem(0);
 			width: 100%;
+			margin-right: util.rem(0);
 		}
 	}
 }

@@ -56,8 +56,8 @@
 		color: var(--color-Neutral-0);
 		background-color: var(--color-Amber-400);
 		border-style: none;
-		@include util.text-preset-8;
 		cursor: pointer;
+		@include util.text-preset-8;
 	}
 }
 
@@ -72,9 +72,9 @@
 
 		&__openButton {
 			display: block;
-			border: none;
-			height: util.rem(20);
 			width: util.rem(20);
+			height: util.rem(20);
+			border: none;
 		}
 
 		&__buttonImage--toggled {
