@@ -104,3 +104,40 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(600)) {
+	.features {
+		&__backgroundLinePattern,
+		&__bgListLinePattern {
+			display: none;
+		}
+
+		&__featureList {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			grid-column: 1/2;
+			grid-row: 2/3;
+			gap: util.rem(50);
+		}
+
+		&__featureItem {
+			display: flex;
+			flex-direction: column;
+			gap: util.rem(20);
+		}
+
+		&__featureIcon {
+			align-self: center;
+		}
+
+		&__descriptionWrapper {
+			opacity: 1;
+		}
+
+		&__featureHeadline,
+		&__featureDescription {
+			text-align: center;
+		}
+	}
+}
