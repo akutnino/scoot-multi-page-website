@@ -59,3 +59,23 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(440)) {
+	.callToAction {
+		height: util.rem(400);
+
+		&__navLinks {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__wrapper,
+		&__headline,
+		&__navItem,
+		&__iconLink,
+		&__iconImage,
+		&__backgroundImage {
+			opacity: 1;
+		}
+	}
+}
