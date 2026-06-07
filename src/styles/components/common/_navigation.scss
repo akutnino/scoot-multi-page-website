@@ -63,9 +63,6 @@
 
 @media (max-width: util.rem(720)) {
 	.navigation {
-		&__wrapper {
-		}
-
 		&__navListWrapper {
 			width: 100%;
 		}
@@ -77,28 +74,13 @@
 			border: none;
 		}
 
-		&__buttonImage--toggled {
-		}
-
-		&__buttonImage--isToggled {
-		}
-
 		&__logoLink {
 			margin-right: util.rem(0);
 			margin-inline: auto;
 		}
 
-		&__logoImage {
-		}
-
 		&__navList {
 			display: none;
-		}
-
-		&__navItem {
-		}
-
-		&__navLink {
 		}
 
 		&__callToActionButton {

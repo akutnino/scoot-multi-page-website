@@ -48,28 +48,3 @@ html:has(.mobileDrawer__dialog[open]) {
 		@include util.text-preset-8;
 	}
 }
-
-@media (max-width: util.rem(720)) {
-	.mobileDrawer {
-		&__dialog {
-		}
-
-		&__overlay {
-		}
-
-		&__dialog::backdrop {
-		}
-
-		&__navList {
-		}
-
-		&__navItem {
-		}
-
-		&__navLink {
-		}
-
-		&__callToActionButton {
-		}
-	}
-}

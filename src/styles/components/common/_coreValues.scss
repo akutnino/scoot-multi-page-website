@@ -73,17 +73,6 @@
 	.coreValues {
 		max-width: util.rem(600);
 
-		&__headline,
-		&__valueItem,
-		&__backgroundPhotoWrapper,
-		&__backgroundPhoto,
-		&__valueNumber,
-		&__descriptionWrapper,
-		&__valueHeadline,
-		&__valuedescription {
-			opacity: 1;
-		}
-
 		&__valueList {
 			flex-direction: column;
 		}

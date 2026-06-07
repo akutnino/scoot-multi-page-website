@@ -49,33 +49,20 @@
 		&__headline {
 			text-align: center;
 		}
-
-		&__navLinks,
-		&__navItem,
-		&__iconLink,
-		&__iconImage,
-		&__backgroundImage {
-			opacity: 1;
-		}
 	}
 }
 
 @media (max-width: util.rem(440)) {
 	.callToAction {
-		height: util.rem(400);
+		height: util.rem(450);
 
 		&__navLinks {
 			flex-direction: column;
 			align-items: center;
 		}
 
-		&__wrapper,
-		&__headline,
-		&__navItem,
-		&__iconLink,
-		&__iconImage,
-		&__backgroundImage {
-			opacity: 1;
+		&__headline {
+			@include util.text-preset-3;
 		}
 	}
 }
