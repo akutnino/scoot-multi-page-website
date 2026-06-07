@@ -138,3 +138,12 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(600)) {
+	.telemetry {
+		&__leftDownwardArrowImage {
+			left: 100%;
+			transform: translate(-30%);
+		}
+	}
+}
