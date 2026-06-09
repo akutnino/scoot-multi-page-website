@@ -95,13 +95,6 @@
 			display: flex;
 			gap: util.rem(80);
 		}
-
-		&__featureIcon,
-		&__descriptionWrapper,
-		&__featureHeadline,
-		&__featureDescription {
-			opacity: 1;
-		}
 	}
 }
 
@@ -129,10 +122,6 @@
 
 		&__featureIcon {
 			align-self: center;
-		}
-
-		&__descriptionWrapper {
-			opacity: 1;
 		}
 
 		&__featureHeadline,
