@@ -16,7 +16,7 @@
 
 	&__descriptionWrapper {
 		display: grid;
-		width: util.rem(445);
+		max-width: util.rem(445);
 		gap: util.rem(25);
 	}
 
@@ -38,8 +38,6 @@
 	}
 
 	&__digitalEraPhoto {
-		min-width: min-content;
-		min-height: min-content;
 		margin-left: util.rem(125);
 		border-radius: util.rem(500);
 	}
@@ -74,7 +72,11 @@
 			gap: util.rem(40);
 		}
 
-		&__headline,
+		&__headline {
+			text-align: center;
+			@include util.text-preset-3;
+		}
+
 		&__description {
 			text-align: center;
 		}

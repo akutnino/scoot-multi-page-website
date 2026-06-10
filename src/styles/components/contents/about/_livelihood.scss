@@ -16,8 +16,6 @@
 	}
 
 	&__betterLivingPhoto {
-		min-width: min-content;
-		min-height: min-content;
 		margin-right: util.rem(125);
 		border-radius: util.rem(500);
 	}
@@ -44,7 +42,7 @@
 
 	&__descriptionWrapper {
 		display: grid;
-		width: util.rem(445);
+		max-width: util.rem(445);
 		justify-self: end;
 		gap: util.rem(25);
 	}
@@ -99,7 +97,11 @@
 			gap: util.rem(40);
 		}
 
-		&__headline,
+		&__headline {
+			text-align: center;
+			@include util.text-preset-3;
+		}
+
 		&__description {
 			text-align: center;
 		}
