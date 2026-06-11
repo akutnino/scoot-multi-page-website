@@ -31,11 +31,6 @@
 
 @media (max-width: util.rem(1200)) {
 	.frequentlyAskedQuestions {
-		&__headline,
-		&__accordionWrapper {
-			opacity: 1;
-		}
-
 		&__wrapper {
 			flex-direction: column;
 			gap: util.rem(40);

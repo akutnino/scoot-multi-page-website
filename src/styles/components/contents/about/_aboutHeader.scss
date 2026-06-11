@@ -64,3 +64,11 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(640)) {
+	.aboutHeader {
+		&__headline {
+			@include util.text-preset-2;
+		}
+	}
+}

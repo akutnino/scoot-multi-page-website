@@ -10,6 +10,7 @@
 		justify-content: space-between;
 		background-color: var(--color-Slate-50);
 		border-style: none;
+		gap: util.rem(20);
 		cursor: pointer;
 		@include util.text-preset-10;
 	}
@@ -43,10 +44,19 @@
 		&__question {
 			width: fit-content;
 			text-align: start;
+			@include util.text-preset-5;
 		}
 
 		&__chevronImage {
 			opacity: 1;
+		}
+	}
+}
+
+@media (max-width: util.rem(850)) {
+	.accordionSet {
+		&__question {
+			@include util.text-preset-7;
 		}
 	}
 }
