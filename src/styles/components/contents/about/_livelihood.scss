@@ -107,3 +107,12 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(400)) {
+	.livelihood {
+		&__rightArrowImage {
+			left: 100%;
+			transform: translate(-110%);
+		}
+	}
+}

@@ -106,3 +106,12 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(620)) {
+	.mobility {
+		&__leftUpwardArrowImage {
+			left: 100%;
+			transform: translate(-35%);
+		}
+	}
+}
