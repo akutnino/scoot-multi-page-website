@@ -25,16 +25,16 @@ function HeroSection() {
 							Get Scootin
 						</CallToActionButton>
 					</div>
+
+					<BackgroundImage
+						className='heroSection__rightArrowImage'
+						src={right_arrow}
+					/>
 				</section>
 
 				<BackgroundImage
 					className='heroSection__lineImage'
 					src={line}
-				/>
-
-				<BackgroundImage
-					className='heroSection__rightArrowImage'
-					src={right_arrow}
 				/>
 			</div>
 
