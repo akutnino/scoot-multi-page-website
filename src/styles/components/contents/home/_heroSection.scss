@@ -14,6 +14,7 @@
 	}
 
 	&__headlineWrapper {
+		position: relative;
 		z-index: 1;
 		display: grid;
 		max-width: util.rem(600);
@@ -55,16 +56,18 @@
 		}
 	}
 
+	&__rightArrowImage {
+		position: absolute;
+		bottom: util.rem(0);
+		left: util.rem(660);
+		min-width: min-content;
+		min-height: min-content;
+	}
+
 	&__lineImage {
 		position: absolute;
 		top: util.rem(215);
 		left: util.rem(-160);
-	}
-
-	&__rightArrowImage {
-		position: absolute;
-		top: util.rem(215);
-		left: util.rem(660);
 	}
 
 	&__backgroundPhoto {
@@ -102,9 +105,11 @@
 @media (max-width: util.rem(1360)) {
 	.heroSection {
 		&__container {
+			top: util.rem(100);
+			place-self: unset;
 			position: absolute;
 			left: 50%;
-			min-width: util.rem(1150);
+			max-width: util.rem(1150);
 			transform: translateX(-50%);
 		}
 
@@ -122,21 +127,42 @@
 			place-self: center;
 		}
 
+		&__rightArrowImage {
+			bottom: util.rem(-150);
+			left: util.rem(-275);
+			right: util.rem(0);
+		}
+
 		&__lineImage {
 			display: none;
 		}
 
-		&__rightArrowImage {
-			top: util.rem(315);
-			left: util.rem(0);
+		&__whiteCirclesImage {
+			top: util.rem(240);
+		}
+	}
+}
+
+@media (max-width: util.rem(640)) {
+	.heroSection {
+		&__container {
+			top: util.rem(80);
 		}
 
-		&__backgroundPhoto {
-			opacity: 1;
+		&__headline {
+			@include util.text-preset-3;
 		}
 
 		&__whiteCirclesImage {
-			top: util.rem(240);
+			display: none;
+		}
+	}
+}
+
+@media (max-width: util.rem(400)) {
+	.heroSection {
+		&__rightArrowImage {
+			display: none;
 		}
 	}
 }
