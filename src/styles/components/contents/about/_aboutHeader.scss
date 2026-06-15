@@ -35,17 +35,11 @@
 
 @media (max-width: util.rem(1300)) {
 	.aboutHeader {
-		&__headline {
-		}
-
 		&__backgroundPhoto {
 			position: absolute;
 			left: 50%;
 			min-width: util.rem(1200);
 			transform: translateX(-50%);
-		}
-
-		&__whiteCirclesImage {
 		}
 	}
 }
@@ -54,9 +48,6 @@
 	.aboutHeader {
 		&__headline {
 			text-align: center;
-		}
-
-		&__backgroundPhoto {
 		}
 
 		&__whiteCirclesImage {
