@@ -96,13 +96,13 @@
 			max-width: util.rem(575);
 		}
 
+		&__descriptionWrapper {
+			gap: util.rem(40);
+		}
+
 		&__headline {
 			text-align: center;
 			@include util.text-preset-3;
-		}
-
-		&__descriptionWrapper {
-			gap: util.rem(40);
 		}
 
 		&__description {
