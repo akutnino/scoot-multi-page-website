@@ -107,7 +107,7 @@
 	}
 
 	&__description {
-		width: util.rem(500);
+		max-width: util.rem(500);
 		color: var(--color-Slate-400);
 		@include util.text-preset-10;
 	}
@@ -176,11 +176,19 @@
 		}
 
 		&__description {
-			width: util.rem(590);
+			max-width: util.rem(590);
 			text-align: center;
 		}
 
 		&__messageUsButton {
+		}
+	}
+}
+
+@media (max-width: util.rem(640)) {
+	.mapLocations {
+		&__headline {
+			@include util.text-preset-4;
 		}
 	}
 }
