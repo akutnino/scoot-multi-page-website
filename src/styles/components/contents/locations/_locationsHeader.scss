@@ -9,6 +9,11 @@
 	overflow: hidden;
 
 	&__headline {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		min-width: min-content;
+
 		max-height: min-content;
 		grid-area: stack;
 		align-self: center;
@@ -35,17 +40,11 @@
 
 @media (max-width: util.rem(1300)) {
 	.locationsHeader {
-		&__headline {
-		}
-
 		&__backgroundPhoto {
 			position: absolute;
 			left: 50%;
 			min-width: util.rem(1200);
 			transform: translateX(-50%);
-		}
-
-		&__whiteCirclesImage {
 		}
 	}
 }
@@ -56,11 +55,16 @@
 			text-align: center;
 		}
 
-		&__backgroundPhoto {
-		}
-
 		&__whiteCirclesImage {
 			display: none;
+		}
+	}
+}
+
+@media (max-width: util.rem(640)) {
+	.locationsHeader {
+		&__headline {
+			@include util.text-preset-2;
 		}
 	}
 }
