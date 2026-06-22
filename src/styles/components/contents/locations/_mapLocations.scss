@@ -128,33 +128,53 @@
 @media (max-width: util.rem(1180)) {
 	.mapLocations {
 		&__backgroundPhotoWrapper {
+			height: util.rem(440);
 		}
 
 		&__mapBackgroundPhoto {
+			min-width: util.rem(900);
+			width: util.rem(900);
 		}
 
 		&__cityPointerWrapper {
+			min-width: util.rem(900);
+			width: util.rem(900);
+			height: util.rem(440);
 		}
 
 		&__cityWrapper {
+			width: util.rem(120);
+			height: util.rem(40);
+
 			&:nth-of-type(1) {
 				// New York
+				top: 16%;
+				right: 78%;
+				width: util.rem(120);
 			}
 
 			&:nth-of-type(2) {
 				// London
+				top: 7%;
+				right: 56%;
+				width: util.rem(120);
 			}
 
 			&:nth-of-type(3) {
 				// Yokohama
+				top: 18.5%;
+				width: util.rem(120);
 			}
 
 			&:nth-of-type(4) {
 				// Jarkarta
+				top: 50%;
+				width: util.rem(120);
 			}
 		}
 
 		&__city {
+			@include util.text-preset-8;
 		}
 
 		&__pointer {
