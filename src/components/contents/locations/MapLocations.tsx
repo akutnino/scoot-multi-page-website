@@ -2,6 +2,7 @@ import BackgroundPhoto from '../../common/BackgroundPhoto.tsx';
 import CallToActionButton from '../../common/CallToActionButton.tsx';
 
 import world_map_desktop from '/src/assets/images/world-map-desktop.png';
+import world_map_mobile from '/src/assets/images/world-map-mobile.png';
 
 function MapLocations() {
 	return (
@@ -11,6 +12,12 @@ function MapLocations() {
 					className='mapLocations__mapBackgroundPhoto'
 					src={world_map_desktop}
 					alt='world map outline photo'
+				/>
+
+				<BackgroundPhoto
+					className='mapLocations__mapMobileBackgroundPhoto'
+					src={world_map_mobile}
+					alt='world map outline photo for mobile'
 				/>
 
 				<div className='mapLocations__cityPointerWrapper wrapper'>
