@@ -11,13 +11,13 @@
 	&__headline {
 		position: absolute;
 		left: 50%;
-		transform: translateX(-50%);
 		min-width: min-content;
 
 		max-height: min-content;
 		grid-area: stack;
 		align-self: center;
 		color: var(--color-Neutral-0);
+		transform: translateX(-50%);
 		@include util.text-preset-1;
 	}
 
