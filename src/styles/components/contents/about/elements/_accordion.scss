@@ -8,9 +8,9 @@
 		display: flex;
 		width: util.rem(750);
 		justify-content: space-between;
+		gap: util.rem(20);
 		background-color: var(--color-Slate-50);
 		border-style: none;
-		gap: util.rem(20);
 		cursor: pointer;
 		@include util.text-preset-10;
 	}
@@ -45,10 +45,6 @@
 			width: fit-content;
 			text-align: start;
 			@include util.text-preset-5;
-		}
-
-		&__chevronImage {
-			opacity: 1;
 		}
 	}
 }
