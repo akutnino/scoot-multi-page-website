@@ -20,6 +20,10 @@
 		transform: translateX(50%);
 	}
 
+	&__mapMobileBackgroundPhoto {
+		display: none;
+	}
+
 	&__cityPointerWrapper {
 		position: absolute;
 		right: 50%;
@@ -120,8 +124,8 @@
 		color: var(--color-Neutral-0);
 		background-color: var(--color-Amber-400);
 		border-style: none;
-		@include util.text-preset-8;
 		cursor: pointer;
+		@include util.text-preset-8;
 	}
 }
 
@@ -132,13 +136,13 @@
 		}
 
 		&__mapBackgroundPhoto {
-			min-width: util.rem(900);
 			width: util.rem(900);
+			min-width: util.rem(900);
 		}
 
 		&__cityPointerWrapper {
-			min-width: util.rem(900);
 			width: util.rem(900);
+			min-width: util.rem(900);
 			height: util.rem(440);
 		}
 
@@ -177,9 +181,6 @@
 			@include util.text-preset-8;
 		}
 
-		&__pointer {
-		}
-
 		&__contentWrapper {
 			flex-direction: column;
 			gap: util.rem(40);
@@ -199,14 +200,59 @@
 			max-width: util.rem(590);
 			text-align: center;
 		}
-
-		&__messageUsButton {
-		}
 	}
 }
 
-@media (max-width: util.rem(640)) {
+@media (max-width: util.rem(740)) {
 	.mapLocations {
+		gap: util.rem(70);
+
+		&__backgroundPhotoWrapper {
+			height: auto;
+			gap: util.rem(50);
+		}
+
+		&__mapBackgroundPhoto {
+			display: none;
+		}
+
+		&__mapMobileBackgroundPhoto {
+			display: block;
+			width: 100%;
+		}
+
+		&__cityPointerWrapper {
+			position: unset;
+			right: unset;
+			display: grid;
+			width: 90%;
+			min-width: unset;
+			height: auto;
+			gap: util.rem(15);
+			transform: unset;
+		}
+
+		&__cityWrapper {
+			width: 100%;
+			height: util.rem(70);
+			background-color: var(--color-Amber-50);
+
+			&:nth-of-type(1),
+			&:nth-of-type(2),
+			&:nth-of-type(3),
+			&:nth-of-type(4) {
+				position: unset;
+				top: unset;
+				right: unset;
+				width: 100%;
+				transform: unset;
+			}
+		}
+
+		&__pointer {
+			display: none;
+		}
+
 		&__headline {
 			@include util.text-preset-4;
 		}
