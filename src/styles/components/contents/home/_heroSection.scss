@@ -105,11 +105,11 @@
 @media (max-width: util.rem(1360)) {
 	.heroSection {
 		&__container {
-			top: util.rem(100);
-			place-self: unset;
 			position: absolute;
+			top: util.rem(100);
 			left: 50%;
 			max-width: util.rem(1150);
+			place-self: unset;
 			transform: translateX(-50%);
 		}
 
@@ -128,9 +128,9 @@
 		}
 
 		&__rightArrowImage {
+			right: util.rem(0);
 			bottom: util.rem(-150);
 			left: util.rem(-275);
-			right: util.rem(0);
 		}
 
 		&__lineImage {
