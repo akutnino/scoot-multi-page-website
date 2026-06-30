@@ -137,3 +137,11 @@
 		}
 	}
 }
+
+@media (max-width: util.rem(600)) {
+	.expansion {
+		&__rightArrowImage {
+			left: 85%;
+		}
+	}
+}
