@@ -107,10 +107,10 @@
 	}
 }
 
-@media (max-width: util.rem(620)) {
+@media (max-width: util.rem(600)) {
 	.mobility {
 		&__leftUpwardArrowImage {
-			left: 100%;
+			left: 90%;
 			transform: translate(-35%);
 		}
 	}
