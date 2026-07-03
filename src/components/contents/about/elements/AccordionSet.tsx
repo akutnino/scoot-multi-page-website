@@ -1,4 +1,4 @@
-import { type MouseEvent, type ReactNode } from 'react';
+import { useState, type MouseEvent, type ReactNode } from 'react';
 
 import BackgroundImage from '../../../common/BackgroundImage.tsx';
 
@@ -15,14 +15,30 @@ function AccordionSet({
 	question: string;
 	children: ReactNode;
 }) {
+	const [btnClassName, setBtnClassName] = useState<string>('');
+
+	const handleMouseEnter = () => {
+		setBtnClassName('hovered');
+	};
+
+	const handleMouseLeave = () => {
+		setBtnClassName('');
+	};
+
 	return (
-		<div className='accordionSet'>
+		<div
+			className={`accordionSet accordionSet--${btnClassName}`}
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
+		>
 			<button
-				className='accordionSet__toggleButton'
+				className={`accordionSet__toggleButton accordionSet__toggleButton--${btnClassName}`}
 				type='button'
 				onClick={onclick}
 			>
-				<h1 className='accordionSet__question'>{question}</h1>
+				<h1 className={`accordionSet__question accordionSet__question--${btnClassName}`}>
+					{question}
+				</h1>
 				<BackgroundImage
 					className='accordionSet__chevronImage'
 					src={chevron}
