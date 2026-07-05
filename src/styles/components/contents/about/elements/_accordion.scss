@@ -4,6 +4,10 @@
 	padding: util.rem(35) util.rem(40);
 	background-color: var(--color-Slate-50);
 
+	&--hovered {
+		background-color: var(--color-Amber-50);
+	}
+
 	&__toggleButton {
 		display: flex;
 		width: util.rem(750);
@@ -13,11 +17,19 @@
 		border-style: none;
 		cursor: pointer;
 		@include util.text-preset-10;
+
+		&--hovered {
+			background-color: var(--color-Amber-50);
+		}
 	}
 
 	&__question {
 		width: max-content;
 		color: var(--color-Slate-600);
+
+		&--hovered {
+			background-color: var(--color-Amber-50);
+		}
 	}
 
 	&__chevronImage {
