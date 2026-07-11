@@ -65,18 +65,18 @@ function Navigation() {
 						<li className='navigation__navItem'>
 							<Link
 								className='navigation__navLink'
-								to={'/careers'}
+								to={'/locations'}
 							>
-								Careers
+								Locations
 							</Link>
 						</li>
 
 						<li className='navigation__navItem'>
 							<Link
 								className='navigation__navLink'
-								to={'/locations'}
+								to={'/careers'}
 							>
-								Locations
+								Careers
 							</Link>
 						</li>
 					</ul>
